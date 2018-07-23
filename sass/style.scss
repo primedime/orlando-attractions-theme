@@ -1,0 +1,118 @@
+/*!
+Theme Name: Orlando Attractions
+Theme URI: http://underscores.me/
+Author: Roy Jossfolk
+Author URI: http://royjossfolk.com
+Description: Custom theme for Orlando Attractions
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: orlando-attractions
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Orlando Attractions is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Footer
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import 'normalize';
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import 'typography/typography';
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+// @import "elements/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import 'forms/forms';
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import 'navigation/navigation';
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+@import 'footer/footer';
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import 'modules/accessibility';
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import 'modules/alignments';
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import 'modules/clearings';
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import 'site/secondary/widgets';
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import 'site/site';
+@import 'site/home-page';
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import 'modules/infinite-scroll';
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import 'media/media';
+
+/*--------------------------------------------------------------
+# Carousel
+--------------------------------------------------------------*/
+@import 'carousel/carousel';

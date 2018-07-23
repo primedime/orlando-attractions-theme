@@ -1,0 +1,150 @@
+header {
+  display: flex;
+  flex-direction: column;
+  // font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.04rem;
+}
+
+.navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00c7dd;
+  padding: 0 2.3rem;
+  /*   height: 37px; */
+}
+
+.navbar-top > .top-links {
+  display: flex;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.navbar-top > .slogan {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 200;
+  margin: 0;
+}
+
+.top-links > .social a {
+  padding-left: 1.1rem;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.top-links > .social a:hover {
+  color: #c4c4c4;
+}
+
+.navbar-middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0 2.3rem;
+  overflow: hidden;
+}
+
+.navbar-middle > .logo {
+  padding: 15px 0;
+}
+
+.middle-nav > .middle-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.middle-links > .menu-links a {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #0874cc;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 30px 15px;
+}
+
+.middle-links > .menu-links a:hover {
+  color: #fff;
+  background-color: #0874cc;
+}
+
+.navbar-bottom {
+  display: flex;
+  background-color: #e04ab2;
+  height: 60px;
+  overflow: hidden;
+}
+
+.navbar-bottom > .bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 2.5rem;
+}
+
+.bottom-links > .ticket-links {
+  padding: 10px 15px;
+}
+
+.bottom-links > .ticket-links:hover {
+  background-color: #d01b99;
+}
+
+i.fa.fa-angle-down {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 0.4rem;
+}
+
+.bottom-links > .ticket-links a {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+}
+
+.buy-tickets {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #0177c1;
+  color: #fff;
+  width: 160px;
+  position: relative;
+  padding-left: 2.3rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: 5;
+
+  > p {
+    margin: 0;
+  }
+}
+
+.buy-tickets:hover {
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.buy-tickets:before {
+  content: '';
+  position: absolute;
+  left: 70%;
+  z-index: -2;
+  height: 80px;
+  width: 80px;
+  background-color: #0177c1;
+  transform: rotate(45deg);
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+}

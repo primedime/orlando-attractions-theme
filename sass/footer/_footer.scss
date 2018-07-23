@@ -1,0 +1,154 @@
+footer {
+  display: grid;
+  grid-template-columns: auto 16% 18% 25%;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    'company-details important-links contact seller-details'
+    'gdpr gdpr gdpr gdpr'
+    'copyright copyright copyright copyright';
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.052rem;
+  background-color: #154299;
+  color: #fff;
+}
+
+footer h2 {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.company-details {
+  padding: 1.5rem 1rem 0 2.3rem;
+  grid-area: company-details;
+}
+
+.company-details > .logo img {
+  width: 333px;
+}
+
+.company-text > p {
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+.important-links {
+  grid-area: important-links;
+  padding: 0 1rem;
+}
+
+.important-links > ul li,
+.contact-us > ul li {
+  font-weight: 100;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.important-links > ul {
+  padding-left: 1.4rem;
+}
+
+.important-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-us {
+  grid-area: contact;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #1a4eb3;
+  padding: 0 1rem;
+}
+
+.contact-us > address {
+  font-weight: 100;
+  font-style: normal;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.footer-social > .footer-social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem 0;
+  list-style-type: none;
+  color: #fff;
+}
+
+a > span.fa {
+  color: #fff;
+}
+
+.seller-details {
+  grid-area: seller-details;
+  text-align: center;
+  padding-right: 2.3rem;
+  padding-left: 1rem;
+}
+
+.ticket-badges img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+.cards-accepted img {
+  width: 100%;
+  height: auto;
+}
+
+.gdpr-area {
+  grid-area: gdpr;
+  background-color: #083386;
+  padding: 0.4rem 2.3rem;
+}
+
+.gdpr-area > p {
+  font-size: 9px;
+  font-weight: 200;
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+  margin-top: 0;
+}
+
+.gdpr-area a {
+  color: #ffdb29;
+}
+
+.copyright-area {
+  background-color: #0f306f;
+  grid-area: copyright;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright-area > .copyright-text {
+  font-size: 0.85rem;
+  font-weight: 200;
+  padding-left: 2.3rem;
+}
+
+.copyright-area > .copyright-links {
+  font-weight: 200;
+  padding-right: 2.3rem;
+}
+
+.copyright-links li {
+  display: inline-flex;
+  list-style: none;
+  font-size: 0.85rem;
+  font-weight: 200;
+}
+
+.copyright-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright-links a:hover {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+}

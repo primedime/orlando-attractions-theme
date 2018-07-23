@@ -1,0 +1,230 @@
+.top-attractions {
+  background: #fff;
+}
+
+.top-attractions-text > p.top-description {
+  font-size: $p-lg;
+  font-weight: 400;
+  margin: 0 0 28px 0;
+}
+
+.content-body p,
+.content-body li {
+  font-family: $font__main;
+}
+
+.content-body h2 {
+  font-family: $font__title-text;
+  font-size: $h2-lg;
+  font-weight: 600;
+  color: $oa-dark-blue;
+  margin: 0 0 21px 0;
+}
+
+h2.top-title-pink {
+  color: $oa-pink;
+}
+
+.content-body h3 {
+  font-family: $font__title-text;
+  font-size: $h3-lg;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.overlay-text {
+  font-family: $font__main;
+  font-weight: 100;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.overlay-text > p {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.owl-nav {
+  position: relative;
+  top: -139px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  color: #000;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.fun-things {
+  display: flex;
+}
+
+.fun-things .hr-75 {
+  border: 0.5px solid #fff;
+  width: 75%;
+}
+
+.fun-things .hr-grey-60 {
+  border: 0.5px solid #c6c6c6;
+  width: 60%;
+  margin: 20px auto 27px;
+}
+
+.whats-new {
+  flex: 1 1 0;
+  padding: 1rem;
+  justify-content: center;
+  text-align: center;
+  color: $white;
+}
+
+.whats-new > .video-box {
+  height: 520px;
+  width: 481px;
+  background: $oa-dark-blue;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-box .whats-new-video {
+  max-height: 267px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.whats-new-text {
+  padding: 0 0 21px;
+}
+
+.whats-new-description {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+}
+
+.coupons-block {
+  margin-top: 8px;
+}
+
+.coupons-title {
+  padding-bottom: 15px;
+  font-weight: 300;
+}
+
+.button {
+  color: $white;
+  text-decoration: none;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.button-yellow {
+  padding: 10px 50px;
+  background-color: $oa-yellow;
+  border: 1px solid $white;
+}
+
+.fun-lists {
+  flex: 10 10 0;
+  padding-top: 20px;
+}
+
+h2.fun-title {
+  color: $oa-dark-blue;
+  font-size: $h2-sm;
+  text-align: center;
+  font-weight: 00;
+}
+
+.best-lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+.action-list li a,
+.distraction-list li a {
+  text-decoration: none;
+  color: #000;
+  font-size: $p-sm;
+}
+
+.action-title,
+.distraction-title {
+  font-size: $h3-sm;
+  color: $oa-dark-blue;
+}
+
+.best-lists ul li {
+  font-size: $p-sm;
+}
+
+.app-features-list li {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+  background: #fff;
+  height: 427px;
+}
+
+.app-details-container {
+  display: flex;
+  flex-direction: row;
+  max-height: 370px;
+  min-height: 370px;
+  background-image: linear-gradient(244deg, #00c7e9 0%, #0095cf 100%);
+}
+
+.mock-up-container {
+  display: flex;
+  flex: 0.85;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.mock-up-container img {
+  margin-bottom: 0.8rem;
+}
+
+.app-text {
+  flex: 1;
+  padding-left: 1.5rem;
+}
+
+.app-text h2 {
+  color: #fff;
+  font-size: $h2-sm;
+}
+
+.app-features-list ul {
+  max-width: 500px;
+  max-height: 175px;
+  columns: 2;
+  color: #fff;
+}
+
+.app-features-list li {
+  list-style-type: none;
+  line-height: 1.813rem;
+}

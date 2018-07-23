@@ -73,7 +73,9 @@ get_header();
     
     <div class="whats-new">
       <div class="video-box">
-        <img class="whats-new-video" src="http://via.placeholder.com/456x267">
+				<div class="whats-new-video">
+          <iframe width="456" height="267" src="https://www.youtube.com/embed/aWn59LH7B78?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
         <div class="whats-new-text">
           <h3 class="whats-new-title">What's New in Orlando?</h3>
           <p class="whats-new-description">Watch our video to find out</p>

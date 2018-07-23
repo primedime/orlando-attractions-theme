@@ -1117,6 +1117,7 @@ h2.top-title-pink {
 	max-height: 267px;
 	border-radius: 8px;
 	margin-bottom: 12px;
+	overflow: hidden;
 }
 
 .whats-new-text {

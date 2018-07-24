@@ -146,7 +146,7 @@
     autoWidth: true,
     center: true,
     loop:true,
-    margin:15,
+    margin:10,
     autoplay:true,
     autoplayHoverPause:true,
     autoplayTimeout:3500,
@@ -158,10 +158,13 @@
             loop: true
         },
         600:{
-            items:2,
+            items:1,
             loop: true
         },
         1000:{
+            items:2
+        },
+        1440:{
             items:3,
             loop:true
         }

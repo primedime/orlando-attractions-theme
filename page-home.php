@@ -167,7 +167,7 @@ get_header();
 				<section class="top-attractions">
 					<div class="top-attractions-text">
 						<h2 class="top-title-pink">Top Orlando Park Ticket Deals</h2>
-						<p class="top-description">from a trusted authorized worldwide ticket seller.</p>
+						<p class="top-description">Real deals, real tickets, real fast from a trusted authorized worldwide ticket seller.</p>
 					</div>
 				</section>
 				<div class="top-tickets-container">

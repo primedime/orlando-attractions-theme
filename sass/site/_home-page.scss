@@ -242,3 +242,123 @@ h2.fun-title {
   margin: 0;
   line-height: 2;
 }
+
+.top-tickets-container {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(1, 100%);
+}
+
+.tickets-container {
+  grid-row: 1;
+  grid-column: 1 / 2;
+  padding-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket-reviews {
+  grid-row: 1;
+  grid-column: 2 / 4;
+  padding-left: 0.5rem;
+}
+
+.ticket-card {
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  width: 210px;
+  border-radius: 8px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.17);
+  overflow: hidden;
+}
+
+.ticket-image {
+  flex: 1;
+}
+
+.ticket-name {
+  flex: 1;
+  padding: 0 0.3rem;
+}
+
+.ticket-name h3 {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #154299;
+  margin-top: 0;
+}
+
+.ticket-prices {
+  flex: 1;
+  color: #fff;
+}
+
+.price-text {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.adult-price {
+  background-color: #154299;
+  width: 90%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+  padding-left: 0.3rem;
+}
+
+.ribbon {
+  height: 0;
+  position: absolute;
+  right: 16px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid #fff;
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid transparent;
+}
+
+.child-price {
+  background-color: #0095cf;
+  width: 90%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.3rem;
+}
+
+.ticket-button {
+  flex: 1;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #ffb042;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+p.ticket-button-text {
+  margin: 0;
+}
+
+.buy-tickets-button {
+  background-color: #154299;
+  width: 200px;
+  padding: 15px 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.buy-tickets-button a {
+  text-decoration: none;
+  color: #fff;
+}

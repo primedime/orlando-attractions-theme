@@ -1287,7 +1287,13 @@ h2.fun-title {
 }
 
 .ticket-image {
-	flex: 1;
+	height: 120px;
+	overflow: hidden;
+}
+
+.ticket-image img {
+	position: relative;
+	top: -25px;
 }
 
 .ticket-name {
@@ -1297,8 +1303,8 @@ h2.fun-title {
 
 .ticket-name h3 {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	font-size: 0.8rem;
-	font-weight: 400;
+	font-size: 0.9rem;
+	font-weight: 500;
 	color: #154299;
 	margin-top: 0;
 }

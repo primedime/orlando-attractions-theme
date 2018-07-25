@@ -10,18 +10,18 @@
       <div class="tickets-carousel owl-carousel owl-theme">
         <div class="ticket-card">
           <div class="ticket-image">
-            <img src="http://via.placeholder.com/210x116" alt="">
+            <img src="https://orlando-attractions-2018.local/wp-content/uploads/2018/07/kennedy-space-centre-270x214.jpg" alt="">
           </div>
           <div class="ticket-name">
-            <h3>SeaWorld Multi-Park - Unlimited Visits + FREE Parking</h3>
+            <h3>Kennedy Space Center Admission Badge</h3>
           </div>
           <div class="ticket-prices">
             <div class="adult-price">
-              <p class="price-text">Adult Price: $137.00</p>
+              <p class="price-text">Adult Price: $52.00</p>
               <div class="ribbon"></div>
             </div>
             <div class="child-price">
-              <p class="price-text">Child Price: $137.00</p>
+              <p class="price-text">Child Price: $43.00</p>
               <div class="ribbon"></div>
             </div>
             <div class="ticket-button">
@@ -32,18 +32,18 @@
       
         <div class="ticket-card">
           <div class="ticket-image">
-            <img src="http://via.placeholder.com/210x116" alt="">
+            <img src="https://orlando-attractions-2018.local/wp-content/uploads/2018/07/icon-orlando-eye-wheel-270x214.jpg" alt="">
           </div>
           <div class="ticket-name">
-            <h3>SeaWorld Multi-Park - Unlimited Visits + FREE Parking</h3>
+            <h3>ICON Orlando Eye at ICON 360</h3>
           </div>
           <div class="ticket-prices">
             <div class="adult-price">
-              <p class="price-text">Adult Price: $137.00</p>
+              <p class="price-text">Adult Price: $22.00</p>
               <div class="ribbon"></div>
             </div>
             <div class="child-price">
-              <p class="price-text">Child Price: $137.00</p>
+              <p class="price-text">Child Price: $18.00</p>
               <div class="ribbon"></div>
             </div>
             <div class="ticket-button">
@@ -54,18 +54,62 @@
       
         <div class="ticket-card">
           <div class="ticket-image">
-            <img src="http://via.placeholder.com/210x116" alt="">
+            <img src="https://orlando-attractions-2018.local/wp-content/uploads/2018/07/boggy-creek-airboat-ride-tickets-270x214.jpg" alt="">
           </div>
           <div class="ticket-name">
-            <h3>SeaWorld Multi-Park - Unlimited Visits + FREE Parking</h3>
+            <h3>Boggy Creek Orlando 30-Minute Airboat Ride</h3>
           </div>
           <div class="ticket-prices">
             <div class="adult-price">
-              <p class="price-text">Adult Price: $137.00</p>
+              <p class="price-text">Adult Price: $24.00</p>
               <div class="ribbon"></div>
             </div>
             <div class="child-price">
-              <p class="price-text">Child Price: $137.00</p>
+              <p class="price-text">Child Price: $19.00</p>
+              <div class="ribbon"></div>
+            </div>
+            <div class="ticket-button">
+              <p class="ticket-button-title">Buy Ticket</p>
+            </div>
+          </div> <!-- ticket-prices end -->
+        </div> <!-- ticket-card end -->
+
+        <div class="ticket-card">
+          <div class="ticket-image">
+            <img src="https://orlando-attractions-2018.local/wp-content/uploads/2018/07/medieval-times-sword-fight-270x214.jpg" alt="">
+          </div>
+          <div class="ticket-name">
+            <h3>Medieval Times Dinner & Show</h3>
+          </div>
+          <div class="ticket-prices">
+            <div class="adult-price">
+              <p class="price-text">Adult Price: $41.00</p>
+              <div class="ribbon"></div>
+            </div>
+            <div class="child-price">
+              <p class="price-text">Child Price: $37.00</p>
+              <div class="ribbon"></div>
+            </div>
+            <div class="ticket-button">
+              <p class="ticket-button-title">Buy Ticket</p>
+            </div>
+          </div> <!-- ticket-prices end -->
+        </div> <!-- ticket-card end -->
+
+        <div class="ticket-card">
+          <div class="ticket-image">
+            <img src="https://orlando-attractions-2018.local/wp-content/uploads/2018/07/clearwater-beach2-270x214.jpg" alt="">
+          </div>
+          <div class="ticket-name">
+            <h3>Clearwater Beach & Lunch</h3>
+          </div>
+          <div class="ticket-prices">
+            <div class="adult-price">
+              <p class="price-text">Adult Price: $60.00</p>
+              <div class="ribbon"></div>
+            </div>
+            <div class="child-price">
+              <p class="price-text">Child Price: $51.00</p>
               <div class="ribbon"></div>
             </div>
             <div class="ticket-button">
@@ -76,18 +120,18 @@
       
         <div class="ticket-card">
           <div class="ticket-image">
-            <img src="http://via.placeholder.com/210x116" alt="">
+            <img src="https://orlando-attractions-2018.local/wp-content/uploads/2018/07/wonderworks-orlando-main-270x214.jpg" alt="">
           </div>
           <div class="ticket-name">
-            <h3>SeaWorld Multi-Park - Unlimited Visits + FREE Parking</h3>
+            <h3>WonderWorks All Access Ticket</h3>
           </div>
           <div class="ticket-prices">
             <div class="adult-price">
-              <p class="price-text">Adult Price: $137.00</p>
+              <p class="price-text">Adult Price: $25.00</p>
               <div class="ribbon"></div>
             </div>
             <div class="child-price">
-              <p class="price-text">Child Price: $137.00</p>
+              <p class="price-text">Child Price: $21.00</p>
               <div class="ribbon"></div>
             </div>
             <div class="ticket-button">

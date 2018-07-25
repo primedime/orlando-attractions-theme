@@ -147,7 +147,7 @@
     center: true,
     loop:true,
     margin:10,
-    autoplay:true,
+    autoplay:false,
     autoplayHoverPause:true,
     autoplayTimeout:3500,
     dots: true,

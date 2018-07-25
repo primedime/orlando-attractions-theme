@@ -12,7 +12,7 @@ $attraction_image = get_field('attraction_image');
         <p class="top-description"><?php echo $top_attractions_description; ?></p>
       </div>  
       <div class="attractions-carousel owl-carousel">
-        <?php $loop = new WP_Query( array( 'post_type' => 'featured_attraction', 'orderby' => 'post_id', 'order' => 'ASC') ); ?>		
+        <?php $loop = new WP_Query( array( 'post_type' => 'featured_attraction', 'orderby' => 'post_id', 'order' => 'ASC', 'posts_per_page' => '20') ); ?>		
         <?php while( $loop->have_posts() ) : $loop->the_post(); 
           $attraction_image = get_field('attraction_image');
         ?>		

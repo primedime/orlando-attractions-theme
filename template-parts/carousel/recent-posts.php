@@ -1,4 +1,4 @@
-<div class="container">
+<div class="hero-container">
   <div class="slider-wrapper owl-carousel">
     <?php
       $recent_posts = wp_get_recent_posts(array(

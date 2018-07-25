@@ -1,8 +1,8 @@
 <div class="content-body">
   <section class="top-attractions">
     <div class="top-attractions-text">
-      <h2 class="top-title-pink">Top Orlando Park Ticket Deals</h2>
-      <p class="top-description">Real deals, real tickets, real fast from a trusted authorized worldwide ticket seller.</p>
+      <h2 class="top-title-pink">Low Price Deals On Top Orlando Theme Park Tickets</h2>
+      <p class="top-description">Free shipping & 5 star service from a trusted authorized worldwide ticket seller. Real Deals. Real Tickets. Real Fast.</p>
     </div>
   </section>
 	<div class="top-tickets-container">

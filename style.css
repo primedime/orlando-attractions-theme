@@ -1016,7 +1016,7 @@ a > span.fa {
 .top-attractions-text > p.top-description {
 	font-size: 1.4rem;
 	font-weight: 400;
-	margin: 0 0 28px 0;
+	margin: 0 0 28px;
 }
 
 .content-body p,
@@ -1785,7 +1785,7 @@ object {
 	background: #869791;
 }
 
-.container {
+.hero-container {
 	display: flex;
 	justify-content: center;
 }

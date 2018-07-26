@@ -39,8 +39,8 @@ $attraction_image = get_field('attraction_image');
           </div>
           <hr class="hr-75">
           <div class="coupons-block">
-            <h3 class="coupons-title">Want Coupons?</h3>
-            <a href="#" class="button button-yellow" role="button">Start Saving</a>
+            <h3 class="coupons-title">Best Nearby Destinations</h3>
+            <a href="#" class="button button-yellow" role="button">Explore ></a>
           </div>
         </div>
       </div>

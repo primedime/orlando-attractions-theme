@@ -18,6 +18,10 @@
 
 .content-body {
   margin: 2.3rem;
+
+  @media only screen and (max-width: 414px) {
+    margin: 2.3rem 0.625rem;
+  }
 }
 
 .page-links {

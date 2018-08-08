@@ -1,7 +1,6 @@
 header {
   display: flex;
   flex-direction: column;
-  // font-family: 'Oswald', sans-serif;
   letter-spacing: 0.04rem;
 }
 
@@ -11,7 +10,10 @@ header {
   justify-content: space-between;
   background-color: #00c7dd;
   padding: 0 2.3rem;
-  /*   height: 37px; */
+
+  @media only screen and (max-width: 414px) {
+    display: none;
+  }
 }
 
 .navbar-top > .top-links {
@@ -45,9 +47,19 @@ header {
   background-color: #fff;
   padding: 0 2.3rem;
   overflow: hidden;
+
+  @media only screen and (max-width: 414px) {
+    padding: 0 0.625rem;
+  }
 }
 
-.navbar-middle > .logo {
+.logo img {
+  @media only screen and (max-width: 414px) {
+    width: 300px;
+  }
+}
+
+.navbar-middle > img.logo {
   padding: 15px 0;
 }
 
@@ -59,7 +71,7 @@ header {
 
 .middle-links > .menu-links a {
   font-size: 1.1rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #0874cc;
   text-decoration: none;
   text-transform: uppercase;

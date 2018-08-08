@@ -10,6 +10,18 @@ footer {
   letter-spacing: 0.052rem;
   background-color: #154299;
   color: #fff;
+
+  @media only screen and (max-width: 414px) {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:
+      'company-details'
+      'important-links'
+      ' contact'
+      'seller-details'
+      'gdpr'
+      'copyright';
+  }
 }
 
 footer h2 {
@@ -20,10 +32,18 @@ footer h2 {
 .company-details {
   padding: 1.5rem 1rem 0 2.3rem;
   grid-area: company-details;
+
+  @media only screen and (max-width: 414px) {
+    padding: 1.5rem 1rem 0;
+  }
 }
 
 .company-details > .logo img {
   width: 333px;
+
+  @media only screen and (max-width: 414px) {
+    width: 100%;
+  }
 }
 
 .company-text > p {
@@ -86,6 +106,10 @@ a > span.fa {
   text-align: center;
   padding-right: 2.3rem;
   padding-left: 1rem;
+
+  @media only screen and (max-width: 414px) {
+    padding-right: 1rem;
+  }
 }
 
 .ticket-badges img {
@@ -103,6 +127,10 @@ a > span.fa {
   grid-area: gdpr;
   background-color: #083386;
   padding: 0.4rem 2.3rem;
+
+  @media only screen and (max-width: 414px) {
+    padding: 0.4rem 1rem;
+  }
 }
 
 .gdpr-area > p {
@@ -123,17 +151,37 @@ a > span.fa {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: 414px) {
+    flex-direction: column;
+  }
 }
 
 .copyright-area > .copyright-text {
   font-size: 0.85rem;
   font-weight: 200;
   padding-left: 2.3rem;
+
+  @media only screen and (max-width: 414px) {
+    padding: 0 1rem;
+    order: 2;
+  }
+}
+
+.copyright-text p {
+  @media only screen and (max-width: 414px) {
+    font-size: 0.875rem;
+  }
 }
 
 .copyright-area > .copyright-links {
   font-weight: 200;
   padding-right: 2.3rem;
+
+  @media only screen and (max-width: 414px) {
+    padding: 0 1rem;
+    order: 1;
+  }
 }
 
 .copyright-links li {
@@ -141,6 +189,12 @@ a > span.fa {
   list-style: none;
   font-size: 0.85rem;
   font-weight: 200;
+}
+
+.copyright-links ul {
+  @media only screen and (max-width: 414px) {
+    padding-left: 0;
+  }
 }
 
 .copyright-links a {

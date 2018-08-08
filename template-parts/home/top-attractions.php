@@ -46,7 +46,7 @@ $attraction_image = get_field('attraction_image');
       </div>
       
       <div class="fun-lists">
-        <h2 class="fun-title">Fun Things to do in Orlando Besides the Theme Parks</h2>
+        <h2 class="fun-title">Fun Things to do in Orlando Beyond the Theme Parks</h2>
         <hr class="hr-grey-60">        
           <div class="best-lists">
             <div class="best-action">

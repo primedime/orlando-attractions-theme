@@ -100,15 +100,33 @@
 <script>
     var owl = $('.slider-wrapper');
     owl.owlCarousel({
-        items:3,
-        loop:true,
+        // items:3,
+        // loop:true,
         margin:1,
         autoplay:true,
         autoplayTimeout:3500,
         autoplayHoverPause:true,
         center: true,
         autoWidth:true,
-        nav: true
+        // nav: true,
+        responsiveClass:true,
+        responsive:{
+        0:{
+            items:1,
+            nav:true,
+            loop: true
+        },
+        480:{
+            items:3,
+            nav:true,
+            loop: true
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:true
+        }
+    }
     });
     </script>
     <script>
@@ -127,7 +145,7 @@
             loop: true
         },
         600:{
-            items:3,
+            items:1,
             nav:true,
             loop: true
         },
@@ -155,7 +173,8 @@
     responsive:{
         0:{
             items:1,
-            loop: true
+            loop: true,
+            autoWidth: true
         },
         600:{
             items:1,

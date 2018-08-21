@@ -2,7 +2,7 @@
   "name": "_s",
   "version": "1.0.0",
   "scripts": {
-    "scss": "node-sass --include-path scss sass/style.scss style.css --output-style=expanded --indent-type=tab --indent-width=1",
+    "scss": "node-sass --watch --include-path scss sass/style.scss style.css --output-style=expanded --indent-type=tab --indent-width=1",
     "autoprefixer": "postcss style.css -u autoprefixer -o style.css --no-map",
     "stylelint": "stylelint 'style.css'",
     "stylefix": "stylelint 'style.css' --fix"

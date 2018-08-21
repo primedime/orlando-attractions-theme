@@ -8,7 +8,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #0874cc;
+  background-color: $oa-dark-blue;
   padding: 0 2.3rem;
 
   > .slogan {
@@ -18,22 +18,22 @@ header {
     margin: 0;
   }
 
-  > ul {
+  > .top-links {
     display: flex;
     list-style: none;
     padding: 6px 0;
     margin: 0;
   }
 
-  > ul li a {
+  > .top-links li a {
     padding-left: 1.1rem;
     font-size: 0.9rem;
     font-weight: 200;
-    color: #fff;
+    color: $white;
     text-decoration: none;
   }
 
-  > ul li a:hover {
+  > .top-links li a:hover {
     color: #c4c4c4;
     text-decoration: underline;
   }
@@ -47,43 +47,63 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
-  padding: 0.8rem 2.3rem;
+  background-color: var(--white);
+  padding: 0 2.3rem;
   overflow: hidden;
-
-  @media only screen and (max-width: 414px) {
-    padding: 0 0.625rem;
-  }
 }
 
-.logo img {
-  @media only screen and (max-width: 414px) {
-    width: 300px;
-  }
-}
-
-.navbar-middle > img.logo {
-  padding: 15px 0;
-}
-
-.middle-nav > .middle-links {
+.middle-links {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  margin: 0;
+
+  > li a {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 90px;
+    color: $oa-dark-blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 34px 10px;
+  }
+
+  li:hover > a {
+    color: $white;
+    background-color: $oa-dark-blue;
+  }
 }
 
-.middle-links > .menu-links a {
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: #0874cc;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 30px 15px;
+.middle-links ul {
+  background-color: $oa-dark-blue;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  position: absolute;
+  z-index: 5555;
+  list-style: none;
+  padding: 0;
+
+  > li a {
+    color: $white;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    line-height: 20px;
+    text-decoration: none;
+    display: block;
+    text-transform: none;
+  }
+
+  li:hover > a {
+    color: $oa-dark-blue;
+    background-color: $white;
+  }
 }
 
-.middle-links > .menu-links a:hover {
-  color: #fff;
-  background-color: #0874cc;
+.middle-links li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  display: block;
 }
 
 .navbar-bottom {

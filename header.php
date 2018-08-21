@@ -31,11 +31,9 @@
   <nav class="navbar-top" role="navigation">
     <p class="slogan">Smart Vacation Ideas. Save Time. Save Money.</p>
     <ul class="top-links">
-      <li class="social"><a href="#"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
-      <li class="social"><a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
-      <li class="social"><a href="#"><span class="fa fa-google-plus" aria-hidden="true"></span></a></li>
-      <li class="social"><a href="#"><span class="fa fa-youtube" aria-hidden="true"></span></a></li>
-      <li class="social"><a href="#"><span class="fa fa-instagram" aria-hidden="true"></span></a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Ticket FAQ</a></li>
     </ul>
   </nav>
 

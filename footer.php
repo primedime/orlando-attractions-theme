@@ -16,10 +16,10 @@
 	<footer id="colophon" class="site-footer">
 	<div class="company-details" itemscope itemtype="http://schema.org/Organization">
       <div class="logo">
-        <img itemprop="logo" src="/wp-content/uploads/2018/04/oa-logo.png" alt="Orlando Attractions Logo">
+        <img itemprop="logo" src="https://orlando-attractions-2018.local/wp-content/uploads/2018/04/oa-logo.png" alt="Orlando Attractions Logo">
       </div>
       <div class="company-text">
-        <p itemprop="description">Orlando Attractions offers unbeatable deals on Orlando Attraction Tickets, along with all the latest news, videos and information from the worlds most popular family destination! With over 30 years experience and USA & UK offices we are truly transatlantic - our customer service is second to none regardless of which side of  'the pond’ you live on!<p>
+        <p itemprop="description">Orlando Attractions offers unbeatable deals on Orlando Attraction Tickets, along with all the latest news, videos and information from the world's most popular family destination! With over 30 years experience and USA & UK offices we are truly transatlantic - our customer service is second to none regardless of which side of 'the pond’ you live on!<p>
       </div>
     </div>
     
@@ -78,7 +78,7 @@
     
     <div class="copyright-area">
       <div class="copyright-text">
-        <p>&copy; Orlando Attractions 2008 - <?php echo date("Y"); ?></p>
+        <p>&copy; Orlando Attractions 2006 - <?php echo date("Y"); ?></p>
       </div>
       <div class="copyright-links">
         <ul>

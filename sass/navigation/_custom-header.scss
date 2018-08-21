@@ -8,36 +8,39 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #00c7dd;
+  background-color: #0874cc;
   padding: 0 2.3rem;
+
+  > .slogan {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin: 0;
+  }
+
+  > ul {
+    display: flex;
+    list-style: none;
+    padding: 6px 0;
+    margin: 0;
+  }
+
+  > ul li a {
+    padding-left: 1.1rem;
+    font-size: 0.9rem;
+    font-weight: 200;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  > ul li a:hover {
+    color: #c4c4c4;
+    text-decoration: underline;
+  }
 
   @media only screen and (max-width: 414px) {
     display: none;
   }
-}
-
-.navbar-top > .top-links {
-  display: flex;
-  list-style: none;
-  padding: 10px 0;
-  margin: 0;
-}
-
-.navbar-top > .slogan {
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: 200;
-  margin: 0;
-}
-
-.top-links > .social a {
-  padding-left: 1.1rem;
-  font-size: 1.3rem;
-  color: #fff;
-}
-
-.top-links > .social a:hover {
-  color: #c4c4c4;
 }
 
 .navbar-middle {
@@ -45,7 +48,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  padding: 0 2.3rem;
+  padding: 0.8rem 2.3rem;
   overflow: hidden;
 
   @media only screen and (max-width: 414px) {
@@ -131,7 +134,7 @@ i.fa.fa-angle-down {
   width: 160px;
   position: relative;
   padding-left: 2.3rem;
-  font-size: 1.3rem;
+  font-size: 1.375rem;
   font-weight: 300;
   text-transform: uppercase;
   text-decoration: none;
@@ -155,8 +158,6 @@ i.fa.fa-angle-down {
   width: 80px;
   background-color: #0177c1;
   transform: rotate(45deg);
-  border-top: 1px solid #fff;
-  border-right: 1px solid #fff;
   border-top: 1px solid #fff;
   border-right: 1px solid #fff;
 }

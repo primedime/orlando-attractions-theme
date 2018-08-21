@@ -665,7 +665,7 @@ header {
 .middle-links ul > li a {
 	color: #fff;
 	font-size: 0.9rem;
-	padding: 10px 15px;
+	padding: 10px 30px 10px 10px;
 	line-height: 20px;
 	text-decoration: none;
 	display: block;
@@ -683,7 +683,7 @@ header {
 	opacity: 0;
 	display: none;
 	position: relative;
-	left: 208px;
+	left: 225px;
 	top: -40px;
 	-webkit-box-shadow: -9px 0 30px -13px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: -9px 0 30px -13px rgba(0, 0, 0, 0.75);
@@ -709,6 +709,18 @@ header {
 	visibility: visible;
 	opacity: 1;
 	display: block;
+}
+
+ul li ul li > a:after {
+	content: ' \00bb';
+	position: absolute;
+	right: 6px;
+	font-size: 1.3rem;
+	font-weight: 100;
+}
+
+ul li ul li > a:only-child:after {
+	content: '';
 }
 
 .navbar-bottom {

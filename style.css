@@ -435,7 +435,7 @@ address {
 
 pre {
 	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-family: "Courier 10 Pitch", courier, monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	line-height: 1.6;
@@ -449,7 +449,7 @@ code,
 kbd,
 tt,
 var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -668,7 +668,7 @@ header {
 	overflow: hidden;
 }
 
-.navbar-bottom > .bottom-links {
+.navbar-bottom > ul {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -677,11 +677,11 @@ header {
 	padding: 0 0 0 2.5rem;
 }
 
-.bottom-links > .ticket-links {
+.navbar-bottom > ul li {
 	padding: 10px 15px;
 }
 
-.bottom-links > .ticket-links:hover {
+.navbar-bottom > ul li:hover {
 	background-color: #d01b99;
 }
 
@@ -745,7 +745,7 @@ footer {
 	grid-template-columns: auto 16% 18% 25%;
 	grid-template-rows: repeat(4, auto);
 	grid-template-areas: 'company-details important-links contact seller-details' 'gdpr gdpr gdpr gdpr' 'copyright copyright copyright copyright';
-	font-family: 'Montserrat', sans-serif;
+	font-family: Montserrat, sans-serif;
 	letter-spacing: 0.052rem;
 	background-color: #154299;
 	color: #fff;
@@ -1336,7 +1336,7 @@ h2.fun-title {
 
 .action-list li a,
 .distraction-list li a {
-	color: #0000ff;
+	color: #00f;
 	font-size: 1.125rem;
 }
 
@@ -1345,7 +1345,7 @@ h2.fun-title {
 	.distraction-list li a {
 		font-size: 1rem;
 		text-decoration: underline;
-		color: #0000ff;
+		color: #00f;
 	}
 }
 
@@ -1507,7 +1507,7 @@ h2.fun-title {
 }
 
 .ticket-name h3 {
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-family: Montserrat, Helvetica, Arial, sans-serif;
 	font-size: 0.9rem;
 	font-weight: 500;
 	color: #154299;
@@ -1563,7 +1563,7 @@ h2.fun-title {
 	background-color: #ffb042;
 	font-size: 18px;
 	font-weight: 500;
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-family: Montserrat, Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 }
 

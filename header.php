@@ -39,7 +39,7 @@
 
   <nav class="navbar-middle" role="navigation">
     <div class="logo" itemscope itemtype="http://schema.org/Organization">
-      <img itemprop="logo" src="/wp-content/uploads/2018/04/oa-logo.png" alt="">
+      <img itemprop="logo" src="https://orlando-attractions-2018.local/wp-content/uploads/2018/04/oa-logo.png" alt="">
     </div>
 
 		<?php

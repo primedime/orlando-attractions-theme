@@ -200,13 +200,13 @@ h2.fun-title {
 
 .action-list li a,
 .distraction-list li a {
-  color: #0000ff;
+  color: #00f;
   font-size: $p-sm;
 
   @media only screen and (max-width: 414px) {
     font-size: $p-sm-mobile;
     text-decoration: underline;
-    color: #0000ff;
+    color: #00f;
   }
 }
 
@@ -360,7 +360,7 @@ h2.fun-title {
 }
 
 .ticket-name h3 {
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
   color: #154299;
@@ -416,7 +416,7 @@ h2.fun-title {
   background-color: $oa-yellow;
   font-size: 18px;
   font-weight: 500;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 

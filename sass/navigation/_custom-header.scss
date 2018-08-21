@@ -93,7 +93,7 @@ header {
   overflow: hidden;
 }
 
-.navbar-bottom > .bottom-links {
+.navbar-bottom > ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -102,11 +102,11 @@ header {
   padding: 0 0 0 2.5rem;
 }
 
-.bottom-links > .ticket-links {
+.navbar-bottom > ul li {
   padding: 10px 15px;
 }
 
-.bottom-links > .ticket-links:hover {
+.navbar-bottom > ul li:hover {
   background-color: #d01b99;
 }
 

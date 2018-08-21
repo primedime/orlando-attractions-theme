@@ -658,6 +658,10 @@ header {
 	padding: 0;
 }
 
+.middle-links ul > li {
+	max-height: 40px;
+}
+
 .middle-links ul > li a {
 	color: #fff;
 	font-size: 0.9rem;
@@ -669,6 +673,34 @@ header {
 }
 
 .middle-links ul li:hover > a {
+	color: #0874cc;
+	background-color: #fff;
+}
+
+.middle-links ul ul {
+	background-color: #0874cc;
+	visibility: hidden;
+	opacity: 0;
+	display: none;
+	position: relative;
+	left: 208px;
+	top: -40px;
+	-webkit-box-shadow: -9px 0 30px -13px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -9px 0 30px -13px rgba(0, 0, 0, 0.75);
+	box-shadow: -9px 0 30px -13px rgba(0, 0, 0, 0.75);
+}
+
+.middle-links ul ul > li a {
+	color: #fff;
+	font-size: 0.9rem;
+	padding: 10px 15px;
+	line-height: 20px;
+	text-decoration: none;
+	display: block;
+	text-transform: none;
+}
+
+.middle-links ul ul li:hover > a {
 	color: #0874cc;
 	background-color: #fff;
 }

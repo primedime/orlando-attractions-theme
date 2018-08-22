@@ -40,7 +40,10 @@
 
   <nav class="navbar-middle" role="navigation">
     <div class="logo" itemscope itemtype="http://schema.org/Organization">
-      <img itemprop="logo" src="https://orlando-attractions-2018.local/wp-content/uploads/2018/04/oa-logo.png" alt="">
+      <img itemprop="logo" src="/wp-content/uploads/2018/04/oa-logo.png" alt="">
+		</div>
+		<div id="navbar-toggle">
+      <i class="fas fa-bars"></i>
     </div>
 
 		<?php
@@ -56,7 +59,8 @@
 
   <nav class="navbar-bottom" role="navigation">
     <a href="#" class="buy-tickets">
-      <p>Buy Tickets</p>
+		<i class="fas fa-tags"></i>
+			<p>Buy Tickets</p>
       <div class="bot-left"></div>
     </a>
 		<?php

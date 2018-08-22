@@ -16,7 +16,7 @@
 	<footer id="colophon" class="site-footer">
 	<div class="company-details" itemscope itemtype="http://schema.org/Organization">
       <div class="logo">
-        <img itemprop="logo" src="https://orlando-attractions-2018.local/wp-content/uploads/2018/04/oa-logo.png" alt="Orlando Attractions Logo">
+        <img itemprop="logo" src="/wp-content/uploads/2018/04/oa-logo.png" alt="Orlando Attractions Logo">
       </div>
       <div class="company-text">
         <p itemprop="description">Orlando Attractions offers unbeatable deals on Orlando Attraction Tickets, along with all the latest news, videos and information from the world's most popular family destination! With over 30 years experience and USA & UK offices we are truly transatlantic - our customer service is second to none regardless of which side of 'the pond’ you live on!<p>
@@ -45,9 +45,9 @@
       </address>
       <div class="footer-social" itemscope itemtype="http://schema.org/Organization">
          <ul class="footer-social-links">
-            <li class="social"><a itemprop="sameAs" href="https://www.facebook.com/OrlandoAttraction/"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a></li>
+            <li class="social"><a itemprop="sameAs" href="https://www.facebook.com/OrlandoAttraction/"><span class="fa fa-facebook-f fa-2x" aria-hidden="true"></span></a></li>
             <li class="social"><a itemprop="sameAs" href="https://twitter.com/MrsOrlando"><span class="fa fa-twitter fa-2x" aria-hidden="true"></span></a></li>
-            <li class="social"><a itemprop="sameAs" href="#"><span class="fa fa-google-plus fa-2x" aria-hidden="true"></span></a></li>
+            <li class="social"><a itemprop="sameAs" href="#"><span class="fa fa-google-plus-g fa-2x" aria-hidden="true"></span></a></li>
             <li class="social"><a itemprop="sameAs" href="https://www.youtube.com/channel/UCVwiX0GFGWLGZjTDUok4tnw"><span class="fa fa-youtube fa-2x" aria-hidden="true"></span></a></li>
             <li class="social"><a itemprop="sameAs" href="https://instagram.com/orlandoattractionstickets"><span class="fa fa-instagram fa-2x" aria-hidden="true"></span></a></li>
         </ul>

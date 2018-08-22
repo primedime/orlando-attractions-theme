@@ -649,13 +649,13 @@ header {
 
 .middle-links ul {
 	background: #0874cc;
-	background: -moz-linear-gradient(top, #0874cc 0%, #0874cc 21%, #54abf2 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, #0874cc), color-stop(21%, #0874cc), color-stop(100%, #54abf2));
-	background: -webkit-linear-gradient(top, #0874cc 0%, #0874cc 21%, #54abf2 100%);
-	background: -o-linear-gradient(top, #0874cc 0%, #0874cc 21%, #54abf2 100%);
-	background: -ms-linear-gradient(top, #0874cc 0%, #0874cc 21%, #54abf2 100%);
-	background: linear-gradient(to bottom, #0874cc 0%, #0874cc 21%, #54abf2 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0874cc', endColorstr='#54abf2', GradientType=0 );
+	background: -moz-linear-gradient(-45deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, #0874cc), color-stop(21%, #0874cc), color-stop(100%, #38a0f0));
+	background: -webkit-linear-gradient(-45deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
+	background: -o-linear-gradient(-45deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
+	background: -ms-linear-gradient(-45deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
+	background: linear-gradient(135deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0874cc', endColorstr='#38a0f0', GradientType=1 );
 	visibility: hidden;
 	opacity: 0;
 	display: none;
@@ -737,7 +737,7 @@ ul li ul li > a:only-child:after {
 	overflow: hidden;
 }
 
-.navbar-bottom > ul {
+.bottom-links {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -746,27 +746,68 @@ ul li ul li > a:only-child:after {
 	padding: 0 0 0 2.5rem;
 }
 
-.navbar-bottom > ul li {
-	padding: 10px 15px;
+.bottom-links > li a {
+	padding: 6px 12px;
+	display: flex;
+	flex-direction: row;
+	font-size: 1.1rem;
+	font-weight: 200;
+	color: #fff;
+	text-decoration: none;
+	line-height: 1.4;
 }
 
-.navbar-bottom > ul li:hover {
+.bottom-links li:hover > a {
 	background-color: #d01b99;
+}
+
+.bottom-links ul {
+	background: #d01b9a;
+	background: -moz-linear-gradient(-45deg, #d01b9a 0%, #d01b9a 21%, #cf50ab 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, #d01b9a), color-stop(21%, #d01b9a), color-stop(100%, #cf50ab));
+	background: -webkit-linear-gradient(-45deg, #d01b9a 0%, #d01b9a 21%, #cf50ab 100%);
+	background: -o-linear-gradient(-45deg, #d01b9a 0%, #d01b9a 21%, #cf50ab 100%);
+	background: -ms-linear-gradient(-45deg, #d01b9a 0%, #d01b9a 21%, #cf50ab 100%);
+	background: linear-gradient(135deg, #d01b9a 0%, #d01b9a 21%, #cf50ab 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d01b9a', endColorstr='#cf50ab', GradientType=1 );
+	visibility: hidden;
+	opacity: 0;
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	list-style: none;
+	padding: 0;
+}
+
+.bottom-links ul > li {
+	max-height: 40px;
+}
+
+.bottom-links ul > li a {
+	color: #fff;
+	font-size: 0.9rem;
+	padding: 10px 30px 10px 10px;
+	line-height: 30px;
+	text-decoration: none;
+	display: block;
+	text-transform: none;
+}
+
+.bottom-links ul li:hover > a {
+	color: #0874cc;
+	background-color: #fff;
+}
+
+.bottom-links li:hover > ul {
+	visibility: visible;
+	opacity: 1;
+	display: block;
 }
 
 i.fa.fa-angle-down {
 	display: flex;
 	align-items: flex-end;
 	margin-left: 0.4rem;
-}
-
-.bottom-links > .ticket-links a {
-	display: flex;
-	flex-direction: row;
-	font-size: 1rem;
-	font-weight: 300;
-	color: #fff;
-	text-decoration: none;
 }
 
 .buy-tickets {

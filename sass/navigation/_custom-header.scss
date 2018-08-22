@@ -76,13 +76,13 @@ header {
 
 .middle-links ul {
   background: rgba(8, 116, 204, 1);
-  background: -moz-linear-gradient(top, rgba(8, 116, 204, 1) 0%, rgba(8, 116, 204, 1) 21%, rgba(84, 171, 242, 1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(8, 116, 204, 1)), color-stop(21%, rgba(8, 116, 204, 1)), color-stop(100%, rgba(84, 171, 242, 1)));
-  background: -webkit-linear-gradient(top, rgba(8, 116, 204, 1) 0%, rgba(8, 116, 204, 1) 21%, rgba(84, 171, 242, 1) 100%);
-  background: -o-linear-gradient(top, rgba(8, 116, 204, 1) 0%, rgba(8, 116, 204, 1) 21%, rgba(84, 171, 242, 1) 100%);
-  background: -ms-linear-gradient(top, rgba(8, 116, 204, 1) 0%, rgba(8, 116, 204, 1) 21%, rgba(84, 171, 242, 1) 100%);
-  background: linear-gradient(to bottom, rgba(8, 116, 204, 1) 0%, rgba(8, 116, 204, 1) 21%, rgba(84, 171, 242, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0874cc', endColorstr='#54abf2', GradientType=0 );
+  background: -moz-linear-gradient(-45deg, rgba(8, 116, 204, 1) 0%, rgba(8, 116, 204, 1) 21%, rgba(56, 160, 240, 1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(8, 116, 204, 1)), color-stop(21%, rgba(8, 116, 204, 1)), color-stop(100%, rgba(56, 160, 240, 1)));
+  background: -webkit-linear-gradient(-45deg, rgba(8, 116, 204, 1) 0%, rgba(8, 116, 204, 1) 21%, rgba(56, 160, 240, 1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(8, 116, 204, 1) 0%, rgba(8, 116, 204, 1) 21%, rgba(56, 160, 240, 1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(8, 116, 204, 1) 0%, rgba(8, 116, 204, 1) 21%, rgba(56, 160, 240, 1) 100%);
+  background: linear-gradient(135deg, rgba(8, 116, 204, 1) 0%, rgba(8, 116, 204, 1) 21%, rgba(56, 160, 240, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0874cc', endColorstr='#38a0f0', GradientType=1 );
   visibility: hidden;
   opacity: 0;
   display: none;
@@ -159,41 +159,82 @@ ul li ul li > a:only-child:after {
 
 .navbar-bottom {
   display: flex;
-  background-color: #e04ab2;
+  background-color: $oa-pink;
   height: 60px;
   overflow: hidden;
 }
 
-.navbar-bottom > ul {
+.bottom-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0 0 0 2.5rem;
+
+  > li a {
+    padding: 6px 12px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    font-weight: 200;
+    color: $white;
+    text-decoration: none;
+    line-height: 1.4;
+  }
+
+  li:hover > a {
+    background-color: $oa-pink-dark;
+  }
 }
 
-.navbar-bottom > ul li {
-  padding: 10px 15px;
+.bottom-links ul {
+  background: rgba(208, 27, 154, 1);
+  background: -moz-linear-gradient(-45deg, rgba(208, 27, 154, 1) 0%, rgba(208, 27, 154, 1) 21%, rgba(207, 80, 171, 1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(208, 27, 154, 1)), color-stop(21%, rgba(208, 27, 154, 1)), color-stop(100%, rgba(207, 80, 171, 1)));
+  background: -webkit-linear-gradient(-45deg, rgba(208, 27, 154, 1) 0%, rgba(208, 27, 154, 1) 21%, rgba(207, 80, 171, 1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(208, 27, 154, 1) 0%, rgba(208, 27, 154, 1) 21%, rgba(207, 80, 171, 1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(208, 27, 154, 1) 0%, rgba(208, 27, 154, 1) 21%, rgba(207, 80, 171, 1) 100%);
+  background: linear-gradient(135deg, rgba(208, 27, 154, 1) 0%, rgba(208, 27, 154, 1) 21%, rgba(207, 80, 171, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d01b9a', endColorstr='#cf50ab', GradientType=1 );
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  list-style: none;
+  padding: 0;
+
+  > li {
+    max-height: 40px;
+  }
+
+  > li a {
+    color: $white;
+    font-size: 0.9rem;
+    padding: 10px 30px 10px 10px;
+    line-height: 30px;
+    text-decoration: none;
+    display: block;
+    text-transform: none;
+  }
+
+  li:hover > a {
+    color: $oa-dark-blue;
+    background-color: $white;
+  }
 }
 
-.navbar-bottom > ul li:hover {
-  background-color: #d01b99;
+.bottom-links li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  display: block;
 }
 
 i.fa.fa-angle-down {
   display: flex;
   align-items: flex-end;
   margin-left: 0.4rem;
-}
-
-.bottom-links > .ticket-links a {
-  display: flex;
-  flex-direction: row;
-  font-size: 1rem;
-  font-weight: 300;
-  color: #fff;
-  text-decoration: none;
 }
 
 .buy-tickets {

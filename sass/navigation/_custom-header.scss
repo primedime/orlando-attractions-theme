@@ -176,11 +176,11 @@ ul li ul li > a:only-child:after {
     padding: 6px 12px;
     display: flex;
     flex-direction: row;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 200;
     color: $white;
     text-decoration: none;
-    line-height: 1.4;
+    line-height: inherit;
   }
 
   li:hover > a {
@@ -201,27 +201,26 @@ ul li ul li > a:only-child:after {
   opacity: 0;
   display: none;
   position: absolute;
-  z-index: 9999;
+  z-index: 5555;
   list-style: none;
   padding: 0;
 
   > li {
-    max-height: 40px;
+    max-height: 45px;
   }
 
   > li a {
     color: $white;
     font-size: 0.9rem;
     padding: 10px 30px 10px 10px;
-    line-height: 30px;
     text-decoration: none;
     display: block;
     text-transform: none;
   }
 
   li:hover > a {
-    color: $oa-dark-blue;
-    background-color: $white;
+    color: $white;
+    background-color: $oa-pink;
   }
 }
 
@@ -229,6 +228,10 @@ ul li ul li > a:only-child:after {
   visibility: visible;
   opacity: 1;
   display: block;
+}
+
+i.fa.fa-ticket-alt {
+  padding-right: 0.3rem;
 }
 
 i.fa.fa-angle-down {

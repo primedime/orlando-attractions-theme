@@ -750,11 +750,11 @@ ul li ul li > a:only-child:after {
 	padding: 6px 12px;
 	display: flex;
 	flex-direction: row;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	font-weight: 200;
 	color: #fff;
 	text-decoration: none;
-	line-height: 1.4;
+	line-height: inherit;
 }
 
 .bottom-links li:hover > a {
@@ -774,34 +774,37 @@ ul li ul li > a:only-child:after {
 	opacity: 0;
 	display: none;
 	position: absolute;
-	z-index: 9999;
+	z-index: 5555;
 	list-style: none;
 	padding: 0;
 }
 
 .bottom-links ul > li {
-	max-height: 40px;
+	max-height: 45px;
 }
 
 .bottom-links ul > li a {
 	color: #fff;
 	font-size: 0.9rem;
 	padding: 10px 30px 10px 10px;
-	line-height: 30px;
 	text-decoration: none;
 	display: block;
 	text-transform: none;
 }
 
 .bottom-links ul li:hover > a {
-	color: #0874cc;
-	background-color: #fff;
+	color: #fff;
+	background-color: #e04ab2;
 }
 
 .bottom-links li:hover > ul {
 	visibility: visible;
 	opacity: 1;
 	display: block;
+}
+
+i.fa.fa-ticket-alt {
+	padding-right: 0.3rem;
 }
 
 i.fa.fa-angle-down {

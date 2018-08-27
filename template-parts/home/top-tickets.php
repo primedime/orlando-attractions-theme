@@ -10,7 +10,7 @@
       <div class="tickets-carousel owl-carousel owl-theme">
         <div class="ticket-card">
           <div class="ticket-image">
-            <img src="https://orlando-attractions-2018.local/wp-content/uploads/2018/07/kennedy-space-centre-270x214.jpg" alt="">
+            <img src="/wp-content/uploads/2018/07/kennedy-space-centre-270x214.jpg" alt="">
           </div>
           <div class="ticket-name">
             <h3>Kennedy Space Center Admission Badge</h3>
@@ -32,7 +32,7 @@
       
         <div class="ticket-card">
           <div class="ticket-image">
-            <img src="https://orlando-attractions-2018.local/wp-content/uploads/2018/07/icon-orlando-eye-wheel-270x214.jpg" alt="">
+            <img src="/wp-content/uploads/2018/07/icon-orlando-eye-wheel-270x214.jpg" alt="">
           </div>
           <div class="ticket-name">
             <h3>ICON Orlando Eye at ICON 360</h3>
@@ -54,7 +54,7 @@
       
         <div class="ticket-card">
           <div class="ticket-image">
-            <img src="https://orlando-attractions-2018.local/wp-content/uploads/2018/07/boggy-creek-airboat-ride-tickets-270x214.jpg" alt="">
+            <img src="/wp-content/uploads/2018/07/boggy-creek-airboat-ride-tickets-270x214.jpg" alt="">
           </div>
           <div class="ticket-name">
             <h3>Boggy Creek Orlando 30-Minute Airboat Ride</h3>
@@ -76,7 +76,7 @@
 
         <div class="ticket-card">
           <div class="ticket-image">
-            <img src="https://orlando-attractions-2018.local/wp-content/uploads/2018/07/medieval-times-sword-fight-270x214.jpg" alt="">
+            <img src="/wp-content/uploads/2018/07/medieval-times-sword-fight-270x214.jpg" alt="">
           </div>
           <div class="ticket-name">
             <h3>Medieval Times Dinner & Show</h3>
@@ -98,7 +98,7 @@
 
         <div class="ticket-card">
           <div class="ticket-image">
-            <img src="https://orlando-attractions-2018.local/wp-content/uploads/2018/07/clearwater-beach2-270x214.jpg" alt="">
+            <img src="/wp-content/uploads/2018/07/clearwater-beach2-270x214.jpg" alt="">
           </div>
           <div class="ticket-name">
             <h3>Clearwater Beach & Lunch</h3>
@@ -120,7 +120,7 @@
       
         <div class="ticket-card">
           <div class="ticket-image">
-            <img src="https://orlando-attractions-2018.local/wp-content/uploads/2018/07/wonderworks-orlando-main-270x214.jpg" alt="">
+            <img src="/wp-content/uploads/2018/07/wonderworks-orlando-main-270x214.jpg" alt="">
           </div>
           <div class="ticket-name">
             <h3>WonderWorks All Access Ticket</h3>

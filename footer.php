@@ -94,6 +94,7 @@
 <?php wp_footer(); ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/owlcarousel/owl.carousel.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/navigation.js"></script>
 <!-- TrustBox script -->
 <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 <!-- End Trustbox script -->

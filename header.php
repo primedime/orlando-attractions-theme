@@ -38,13 +38,13 @@
     </ul>
   </nav>
 
-  <nav class="navbar-middle" role="navigation">
+  <nav id="site-navigation" class="navbar-middle main-navigation" role="navigation">
     <div class="logo" itemscope itemtype="http://schema.org/Organization">
       <img itemprop="logo" src="/wp-content/uploads/2018/04/oa-logo.png" alt="">
 		</div>
-		<div id="navbar-toggle">
+		<button class="menu-toggle" id="navbar-toggle" aria-controls="primary-menu" aria-expanded="false">
       <i class="fas fa-bars"></i>
-    </div>
+</button>
 
 		<?php
 			wp_nav_menu( array(

@@ -53,6 +53,32 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* 16px */
 /* 22px */
 /* 20px */
+@keyframes slide-bottom {
+	0% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+		opacity: 0.5;
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slide-right {
+	0% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+		opacity: 0.5;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -625,10 +651,11 @@ header {
 	overflow: hidden;
 }
 
-.navbar-middle div#navbar-toggle {
+.navbar-middle button#navbar-toggle {
 	display: none;
 	visibility: hidden;
 	opacity: 0;
+	background: #fff;
 }
 
 @media only screen and (max-width: 414px) {
@@ -638,10 +665,31 @@ header {
 	.navbar-middle img {
 		width: 90%;
 	}
-	.navbar-middle div#navbar-toggle {
+	.navbar-middle .menu-toggle {
+		display: block;
+	}
+	.navbar-middle.toggled ul {
+		display: block;
+		padding: 0;
+	}
+	.navbar-middle button#navbar-toggle {
 		display: block;
 		visibility: visible;
 		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	.middle-nav {
+		position: absolute;
+		z-index: 7777;
+		background-color: #fff;
+		top: 77.98px;
+		right: 0;
+		width: 100vw;
+		-webkit-box-shadow: 0px 13px 43px -18px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 0px 13px 43px -18px rgba(0, 0, 0, 0.75);
+		box-shadow: 0px 13px 43px -18px rgba(0, 0, 0, 0.75);
 	}
 }
 
@@ -670,6 +718,13 @@ header {
 @media only screen and (max-width: 414px) {
 	.middle-links {
 		display: none;
+	}
+	.middle-links > li a {
+		display: block;
+		line-height: 58px;
+		color: #0874cc;
+		padding: 0 50px 0 10px;
+		font-size: 1rem;
 	}
 }
 
@@ -742,6 +797,13 @@ header {
 	visibility: visible;
 	opacity: 1;
 	display: block;
+	-webkit-animation: slide-bottom 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	animation: slide-bottom 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.middle-links li:hover > ul ul {
+	-webkit-animation: slide-right 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	animation: slide-right 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 ul li ul li > a:after {
@@ -845,6 +907,8 @@ ul li ul li > a:only-child:after {
 	visibility: visible;
 	opacity: 1;
 	display: block;
+	-webkit-animation: slide-bottom 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	animation: slide-bottom 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @media only screen and (max-width: 414px) {
@@ -909,9 +973,11 @@ i.fa.fa-angle-down {
 		display: block;
 		padding: 12px 10px;
 		text-align: center;
+		box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.5);
 	}
 	.buy-tickets > p {
-		font-size: 12px;
+		font-size: 10px;
+		margin-top: 0.3rem;
 	}
 	.buy-tickets > i.fas.fa-tags {
 		display: block;

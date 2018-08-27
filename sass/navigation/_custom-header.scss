@@ -342,7 +342,7 @@ i.fa.fa-angle-down {
     margin: 0;
   }
 
-  > i.fas.fa-tags {
+  > i.icon-tags {
     display: none;
     visibility: hidden;
     opacity: 0;
@@ -350,20 +350,21 @@ i.fa.fa-angle-down {
 
   @media only screen and (max-width: 414px) {
     display: block;
-    padding: 12px 10px;
+    padding: 7px 6px;
     text-align: center;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.5);
 
     > p {
       font-size: 10px;
-      margin-top: 0.3rem;
+      margin-top: 4px;
     }
 
-    > i.fas.fa-tags {
+    > i.icon-tags {
       display: block;
       visibility: visible;
       opacity: 1;
       text-align: center;
+      font-size: 1.8rem;
     }
   }
 }

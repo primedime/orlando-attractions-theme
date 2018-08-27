@@ -59,7 +59,7 @@
 
   <nav class="navbar-bottom" role="navigation">
     <a href="#" class="buy-tickets">
-		<i class="fas fa-tags"></i>
+		<i class="icon-tags"></i>
 			<p>Buy Tickets</p>
       <div class="bot-left"></div>
     </a>

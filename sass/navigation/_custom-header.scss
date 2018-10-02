@@ -142,15 +142,17 @@ header {
 
   > li {
     max-height: 40px;
+    min-width: 235px;
   }
 
   > li a {
     color: $white;
     font-size: 0.9rem;
-    padding: 10px 30px 10px 10px;
+    padding: 10px;
     line-height: 20px;
     text-decoration: none;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     text-transform: none;
   }
 
@@ -166,7 +168,7 @@ header {
   opacity: 0;
   display: none;
   position: relative;
-  left: 225px;
+  left: 230px;
   top: -40px;
   -webkit-box-shadow: -9px 0 30px -13px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -9px 0 30px -13px rgba(0, 0, 0, 0.75);
@@ -186,6 +188,10 @@ header {
     color: $oa-dark-blue;
     background-color: $white;
   }
+
+  @media only screen and (max-width: 414px) {
+    left: 0;
+  }
 }
 
 .middle-links li:hover > ul {
@@ -203,9 +209,7 @@ header {
 
 ul li ul li > a:after {
   content: '\00bb';
-  position: absolute;
-  right: 6px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 100;
 }
 

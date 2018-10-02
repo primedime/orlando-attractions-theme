@@ -191,5 +191,29 @@
     }
 });
 </script>
+<script>
+    var owl = $('.destination-carousel');
+    $(owl).owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 3,
+          nav: false
+        },
+        600: {
+          items: 3,
+          nav: false
+        },
+        1000: {
+          items: 5,
+          nav: false,
+          loop: true
+        }
+      }
+    })
+  </script>
 </body>
 </html>

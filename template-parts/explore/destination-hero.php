@@ -36,16 +36,16 @@ $instagram                     = get_field('instagram');
         <li><a itemprop="sameAs" href="<?php echo $facebook; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
         <?php endif; ?>
         <?php if( !empty($twitter) ) : ?>
-        <li><a itemprop="sameAs" href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a itemprop="sameAs" href="<?php echo $twitter; ?>" target="_blank"><i class="fab fa-twitter"></i></a></li>
         <?php endif; ?>
         <?php if( !empty($google_plus) ) : ?>
-        <li><a itemprop="sameAs" href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a itemprop="sameAs" href="<?php echo $google_plus; ?>" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
         <?php endif; ?>
         <?php if( !empty($youtube) ) : ?>
-        <li><a itemprop="sameAs" href="#" target="_blank"><i class="fab fa-youtube"></i></span></a></li>
+        <li><a itemprop="sameAs" href="<?php echo $youtube; ?>" target="_blank"><i class="fab fa-youtube"></i></span></a></li>
         <?php endif; ?>
         <?php if( !empty($instagram) ) : ?>
-        <li><a itemprop="sameAs" href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a itemprop="sameAs" href="<?php echo $instagram; ?>" target="_blank"><i class="fab fa-instagram"></i></a></li>
         <?php endif; ?>
       </ul>
     </div> <!-- destination-social END -->

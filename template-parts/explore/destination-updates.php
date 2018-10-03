@@ -1,46 +1,31 @@
 <?php
 // Advanced Custom Fields
-$facebook_feed = get_field('facebook_feed');
+$facebook_feed           = get_field('facebook_feed');
+$destination_category    = get_field('category');
 ?>
 
 <div class="destination-updates">
       <div class="recent-news">
         <h2 class="title">Recent <?php the_title(); ?> News</h2>
+      <?php
+      $recent_posts = wp_get_recent_posts(array(
+        'category' => $destination_category,
+        'numberposts' => 3, // Number of recent posts thumbnails to display
+        'post_status' => 'publish' // Show only the published posts
+      ));
+      foreach($recent_posts as $post) : ?>
         <article class="recent-post">
           <div class="featured-image">
-            <img class="attractions-image" src="http://via.placeholder.com/145x145">
+          <?php echo get_the_post_thumbnail($post['ID'], 'thumbnail', array( 'class' => 'attractions-image' )); ?>
           </div>
           <div class="post-details">
-            <h3 class="post-title">Top 10 Things to do in Winter Park</h3>
-            <p class="post-excerpt">There is so much to do in Winter Park - it’s a destination like no other in Central
-              Florida. The European architecture and quaint cafes are a world away from Disney and the attractions.</p>
-            <a href="#" class="post-link">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+            <h3 class="post-title"><?php echo $post['post_title'] ?></h3>
+            <p class="post-excerpt"><?php echo wp_trim_words($post['post_content'], 27); ?></p>
+            <a href="<?php echo get_permalink($post['ID']) ?>" class="post-link">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
           </div>
         </article>
-
-        <article class="recent-post">
-          <div class="featured-image">
-            <img class="attractions-image" src="http://via.placeholder.com/145x145">
-          </div>
-          <div class="post-details">
-            <h3 class="post-title">Hot Deals Winter Park</h3>
-            <p class="post-excerpt">Feeling the heat in Orlando? Take a break and cool off in nearby Winter Park. This
-              pristine enclave is famous for it's European style cafe culture, chic boutiques and a terrific...</p>
-            <a href="#" class="post-link">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
-          </div>
-        </article>
-
-        <article class="recent-post">
-          <div class="featured-image">
-            <img class="attractions-image" src="http://via.placeholder.com/145x145">
-          </div>
-          <div class="post-details">
-            <h3 class="post-title">The Art of Winter Park</h3>
-            <p class="post-excerpt">This week sees the return of the ever-popular Winter Park Sidewalk Arts Festival -
-              the 59th one to be exact, and it gets bigger and better every year!</p>
-            <a href="#" class="post-link">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
-          </div>
-        </article>
+      <?php endforeach; wp_reset_query(); ?>
+        
       </div> <!-- recent-news END -->
 
       <div class="social-feed">

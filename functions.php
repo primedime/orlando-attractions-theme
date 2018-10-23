@@ -169,3 +169,14 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/**
+ * Remove width and height attributes from the returning html
+ */
+
+add_filter( 'post_thumbnail_html', 'remove_thumbnail_width_height', 10, 5 );
+ 
+function remove_thumbnail_width_height( $html, $post_id, $post_thumbnail_id, $size, $attr ) {
+    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+    return $html;
+}

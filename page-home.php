@@ -13,7 +13,7 @@ get_header();
 	
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
-    <?php get_template_part( 'template-parts/carousel/recent','posts' ); ?>
+    <?php get_template_part( 'template-parts/home/article','hero' ); ?>
 
     <?php get_template_part( 'template-parts/home/top','attractions' ); ?>
 

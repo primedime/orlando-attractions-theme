@@ -198,14 +198,17 @@
       margin: 10,
       nav: false,
       responsiveClass: true,
+      autoHeight:true,
       responsive: {
         0: {
-          items: 3,
-          nav: false
+          items: 2,
+          nav: false,
+          stagePadding: 25
         },
         600: {
-          items: 3,
-          nav: false
+          items: 2,
+          nav: false,
+          stagePadding: 25
         },
         1000: {
           items: 5,

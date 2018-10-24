@@ -3,16 +3,28 @@
   flex: 1;
   height: 100%;
   justify-content: space-between;
+
+  @media only screen and (max-width: 414px) {
+    flex-direction: column;
+  }
 }
 
 .destination-video {
   width: 705px;
+
+  @media only screen and (max-width: 414px) {
+    width: 100%;
+  }
 }
 
 .destination-video iframe,
 .destination-video object,
 .destination-video embed {
   width: 100%;
+
+  @media only screen and (max-width: 414px) {
+    height: 270px;
+  }
 }
 
 .destination-details {
@@ -20,6 +32,10 @@
   flex: 1;
   flex-direction: column;
   padding-left: 2rem;
+
+  @media only screen and (max-width: 414px) {
+    padding-left: 0;
+  }
 }
 
 .destination {
@@ -30,6 +46,10 @@
   font-size: 2.625rem;
   margin-top: 0;
   color: #0177c1;
+
+  @media only screen and (max-width: 414px) {
+    font-size: 32px;
+  }
 }
 
 .destination > ul,
@@ -38,6 +58,10 @@
   margin-left: 0;
   margin-top: 0;
   padding-left: 0;
+}
+
+.destination-social {
+  text-align: center;
 }
 
 .destination-social > ul {
@@ -56,6 +80,10 @@
 .destination-highlights > h3 {
   font-size: 1.625rem;
   margin-top: 0;
+
+  @media only screen and (max-width: 414px) {
+    font-size: 22px;
+  }
 }
 
 .destination-highlights > .tags {
@@ -70,6 +98,11 @@
   background-color: #f3f4f6;
   color: #e04ab2;
   border-radius: 2px;
+
+  @media only screen and (max-width: 414px) {
+    font-size: 14px;
+    margin: 0 4px 10px 0;
+  }
 }
 
 .tag > i.fa-hashtag {
@@ -79,6 +112,12 @@
 .destination-updates {
   display: flex;
   padding-top: 60px;
+
+  @media only screen and (max-width: 414px) {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 .destination-updates .featured-image {
@@ -93,6 +132,10 @@
 .recent-news h2.title {
   font-size: 2.25rem;
   color: #154299;
+
+  @media only screen and (max-width: 414px) {
+    font-size: 26px;
+  }
 }
 
 .recent-post {
@@ -135,11 +178,19 @@ h3.post-title {
   display: flex;
   flex-direction: column;
   padding-top: 80px;
+
+  @media only screen and (max-width: 414px) {
+    padding-top: 40px;
+  }
 }
 
 .destination-gallery > h2.title {
   font-size: 2.25rem;
   color: #154299;
+
+  @media only screen and (max-width: 414px) {
+    font-size: 26px;
+  }
 }
 
 .destination-carousel .item {
@@ -151,6 +202,11 @@ h3.post-title {
   display: flex;
   justify-content: space-between;
   padding-top: 80px;
+
+  @media only screen and (max-width: 414px) {
+    flex-direction: column;
+    padding-top: 40px;
+  }
 }
 
 .things-to-do {
@@ -161,10 +217,18 @@ h3.post-title {
 .things-to-do h2.title {
   font-size: 2.25rem;
   color: #154299;
+
+  @media only screen and (max-width: 414px) {
+    font-size: 26px;
+  }
 }
 
 .things-to-do p {
   font-size: 20px;
+
+  @media only screen and (max-width: 414px) {
+    font-size: 1rem;
+  }
 }
 
 .did-you-know {
@@ -223,6 +287,10 @@ h3.post-title {
 .destination-content h2.content-title {
   font-size: 2.25rem;
   color: #154299;
+
+  @media only screen and (max-width: 414px) {
+    font-size: 26px;
+  }
 }
 
 .destination-lists-wrapper {
@@ -281,9 +349,17 @@ h3.list-title {
 
 .wysiwyg-editor {
   margin-top: 80px;
+
+  @media only screen and (max-width: 414px) {
+    margin-top: 40px;
+  }
 }
 
 .wysiwyg-editor h2 {
   font-size: 2.25rem;
   color: #154299;
+
+  @media only screen and (max-width: 414px) {
+    font-size: 26px;
+  }
 }

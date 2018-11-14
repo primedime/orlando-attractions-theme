@@ -218,5 +218,28 @@
       }
     })
   </script>
+  <script>
+    var owl = $('.partner-ticket-carousel');
+    $(owl).owlCarousel({
+      loop: false,
+      autoHeight: false,
+      autoWidth: true,
+      margin: 5,
+      stagePadding: 5,
+      nav: false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 2
+        }
+      }
+    })
+  </script>
 </body>
 </html>

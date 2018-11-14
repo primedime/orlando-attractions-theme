@@ -3,7 +3,7 @@
  * The template for displaying Explore featured pages
  * 
  * 
- * Template Name: Explore
+ * Template Name: Attractions
  * @package Orlando_Attractions
  */
 
@@ -14,7 +14,7 @@ get_header();
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
         <div class="content-body">
-            <?php get_template_part( 'template-parts/explore/destination','hero' ); ?>
+            <?php get_template_part( 'template-parts/attractions/attractions','hero' ); ?>
 
             <?php get_template_part( 'template-parts/explore/destination','updates' ); ?>
 

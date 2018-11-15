@@ -26,7 +26,9 @@ $instagram                     = get_field('instagram');
       <ul>
         <li>Visitor Center: <a href="<?php echo $destination_address_url; ?>" class="address" target="_blank"><?php echo $destination_address; ?></a></li>
         <li>Phone: <a href="tel:<?php echo $destination_phone_url; ?>" class="phone"><?php echo $destination_phone; ?></a></li>
+        <?php if( !empty($destination_email) ) : ?>
         <li>Email: <a href="mailto:<?php echo $destination_email; ?>" class="email"><?php echo $destination_email; ?></a></li>
+        <?php endif; ?>
       </ul>
     </div> <!-- destination-details END -->
 

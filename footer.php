@@ -16,7 +16,7 @@
 	<footer id="colophon" class="site-footer">
 	<div class="company-details" itemscope itemtype="http://schema.org/Organization">
       <div class="logo">
-        <img itemprop="logo" src="/wp-content/uploads/2018/04/oa-logo.png" alt="Orlando Attractions Logo">
+        <img itemprop="logo" src="/wp-content/uploads/2016/08/OA-Logo-1000.png" alt="Orlando Attractions Logo">
       </div>
       <div class="company-text">
         <p itemprop="description">Orlando Attractions offers unbeatable deals on Orlando Attraction Tickets, along with all the latest news, videos and information from the world's most popular family destination! With over 30 years experience and USA & UK offices we are truly transatlantic - our customer service is second to none regardless of which side of 'the pond’ you live on!<p>
@@ -57,10 +57,10 @@
     <div class="seller-details">
       <h2>Trusted Ticket Seller</h2>
       <div class="ticket-badges">
-        <img src="/wp-content/uploads/2018/07/ticket-badges.png" alt="Trusted Ticket Seller">
+        <img src="/wp-content/uploads/2018/11/ticket-badges.png" alt="Trusted Ticket Seller">
       </div>
       <div class="cards-accepted">
-        <img src="/wp-content/uploads/2018/07/credit-cards-accepted.png" alt="Credit Cards Accepted">
+        <img src="/wp-content/uploads/2018/11/credit-cards-accepted.png" alt="Credit Cards Accepted">
       </div>
     </div>
     

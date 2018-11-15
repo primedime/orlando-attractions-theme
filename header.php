@@ -39,8 +39,10 @@
   </nav>
 
   <nav id="site-navigation" class="navbar-middle main-navigation" role="navigation">
-    <div class="logo" itemscope itemtype="http://schema.org/Organization">
-      <img itemprop="logo" src="/wp-content/uploads/2016/08/OA-Logo-1000.png" alt="">
+		<div class="logo" itemscope itemtype="http://schema.org/Organization">
+			<a href="/">
+				<img itemprop="logo" src="/wp-content/uploads/2016/08/OA-Logo-1000.png" alt="">
+			</a>
 		</div>
 		<button class="menu-toggle" id="navbar-toggle" aria-controls="primary-menu" aria-expanded="false">
       <i class="fas fa-bars"></i>

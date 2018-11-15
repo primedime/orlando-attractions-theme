@@ -47,7 +47,6 @@
          <ul class="footer-social-links">
             <li class="social"><a itemprop="sameAs" href="https://www.facebook.com/OrlandoAttraction/"><span class="fa icon-facebook-f fa-2x" aria-hidden="true"></span></a></li>
             <li class="social"><a itemprop="sameAs" href="https://twitter.com/MrsOrlando"><span class="fa icon-twitter fa-2x" aria-hidden="true"></span></a></li>
-            <li class="social"><a itemprop="sameAs" href="#"><span class="fa icon-google-plus fa-2x" aria-hidden="true"></span></a></li>
             <li class="social"><a itemprop="sameAs" href="https://www.youtube.com/channel/UCVwiX0GFGWLGZjTDUok4tnw"><span class="fa icon-youtube-play fa-2x" aria-hidden="true"></span></a></li>
             <li class="social"><a itemprop="sameAs" href="https://instagram.com/orlandoattractionstickets"><span class="fa icon-instagram fa-2x" aria-hidden="true"></span></a></li>
         </ul>

@@ -58,6 +58,10 @@ header {
     background: $white;
   }
 
+  img {
+    width: 35vw;
+  }
+
   @media only screen and (max-width: 414px) {
     padding: 20px 0.6rem;
 

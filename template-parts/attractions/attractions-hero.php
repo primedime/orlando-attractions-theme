@@ -53,7 +53,7 @@ $attraction_phone_url          = $attractions_address_first_row['attraction_phon
       </ul>
     </div> <!-- destination-social END -->
     <div class="attraction-tickets">
-    <h3><?php the_title(); ?> Tickets</h3>
+    
       <div class="partner-ticket-carousel owl-carousel owl-theme">
         <?php if( have_rows('tickets') ): ?>
 
@@ -66,7 +66,7 @@ $attraction_phone_url          = $attractions_address_first_row['attraction_phon
               $ticket_url     = get_sub_field('ticket_url');
 
             ?>
-            
+            <h3><?php the_title(); ?> Tickets</h3>
             <div class="ticket-wrapper">
               <div class="ticket-title">
                 <h3><?php echo $ticket_title; ?></h3>

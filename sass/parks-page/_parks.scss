@@ -1,0 +1,56 @@
+.park-main {
+  display: flex;
+
+  > .content-body {
+    order: 1;
+  }
+}
+
+.park-aside {
+  min-width: 394px;
+  margin: 3.875rem 0 3.875rem 2.3rem;
+  order: 0;
+}
+
+.park-video {
+  max-width: 45vw;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+
+  @media only screen and (max-width: 414px) {
+    width: 100vw;
+  }
+}
+
+.park-video iframe,
+.park-video object,
+.park-video embed {
+  width: 100%;
+
+  @media only screen and (max-width: 414px) {
+    height: 270px;
+  }
+}
+
+.park-details {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.park {
+  font-size: 1.125rem;
+}
+
+.park-title {
+  font-size: 2.5vw;
+  line-height: 1;
+  margin-top: 0;
+  color: #0177c1;
+
+  @media only screen and (max-width: 414px) {
+    font-size: 32px;
+  }
+}

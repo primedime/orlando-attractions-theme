@@ -30,7 +30,7 @@ get_header();
         </div><!-- .content-body -->
         <aside class="park-aside">
         <?php
-        get_sidebar(); ?>
+        get_sidebar('parks'); ?>
         </aside>
 	</main><!-- #main -->
 </div><!-- #primary -->

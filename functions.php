@@ -160,11 +160,12 @@ class Partner_Ad_Widget extends WP_Widget {
             $partner_category     = get_field('partner_category');
           ?>
       <div class="partner-wrapper">
-        <a href="<?php the_field('partner_url'); ?>">
+				<a href="<?php the_field('partner_url'); ?>">
+					<div class="partner-ad-overlay"></div>
           <img src="<?php echo $partner_image['url']; ?>" alt="<?php echo $attraction_image['alt']; ?>">
           <div class="text">
             <h3 class="tagline"><?php the_title(); ?></h3>
-            <p class="category"><?php the_field('partner_category'); ?></p>
+            <p class="<?php the_field('partner_category'); ?>"><?php the_field('partner_category'); ?></p>
           </div>
         </a>
       </div>

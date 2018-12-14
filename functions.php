@@ -130,6 +130,74 @@ function orlando_attractions_widgets_init() {
 }
 add_action( 'widgets_init', 'orlando_attractions_widgets_init' );
 
+class Partner_Ad_Widget extends WP_Widget {
+
+	/**
+	 * Sets up the widgets name etc
+	 */
+	public function __construct() {
+		$widget_ops = array( 
+			'classname' => 'partner_ad_widget',
+			'description' => 'Display a partner ad in the sidebar',
+		);
+		parent::__construct( 'partner_ad_widget', 'Partner Ad Widget', $widget_ops );
+	}
+
+	/**
+	 * Outputs the content of the widget
+	 *
+	 * @param array $args
+	 * @param array $instance
+	 */
+	public function widget( $args, $instance ) {
+		// outputs the content of the widget
+		echo $args['before_widget'] . $args['before_title'] . $title . $args['after_title']; ?>
+		<section class="sidebar-partner">
+    <?php $loop = new WP_Query( array( 'post_type' => 'partner_ads', 'orderby' => 'rand', 'order' => 'ASC', 'posts_per_page' => '1') ); ?>		
+          <?php while( $loop->have_posts() ) : $loop->the_post(); 
+            $partner_image        = get_field('partner_image');
+            $partner_url          = get_field('partner_url');
+            $partner_category     = get_field('partner_category');
+          ?>
+      <div class="partner-wrapper">
+        <a href="<?php the_field('partner_url'); ?>">
+          <img src="<?php echo $partner_image['url']; ?>" alt="<?php echo $attraction_image['alt']; ?>">
+          <div class="text">
+            <h3 class="tagline"><?php the_title(); ?></h3>
+            <p class="category"><?php the_field('partner_category'); ?></p>
+          </div>
+        </a>
+      </div>
+    <? endwhile; ?>
+  </section>
+	<?php echo $args['after_widget'];
+	}
+	/**
+	 * Outputs the options form on admin
+	 *
+	 * @param array $instance The widget options
+	 */
+	public function form( $instance ) {
+		// outputs the options form on admin
+	}
+
+	/**
+	 * Processing widget options on save
+	 *
+	 * @param array $new_instance The new options
+	 * @param array $old_instance The previous options
+	 *
+	 * @return array
+	 */
+	public function update( $new_instance, $old_instance ) {
+		// processes widget options to be saved
+	}
+}
+function partner_ad_widget() { 
+	register_widget( 'Partner_Ad_Widget' );
+}
+add_action( 'widgets_init', 'partner_ad_widget' );
+
 /**
  * Enqueue scripts and styles.
  */

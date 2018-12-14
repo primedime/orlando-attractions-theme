@@ -2,7 +2,7 @@
 // Advanced Custom Fields
 $top_attractions_title       = get_field('top_attractions_title');
 $top_attractions_description = get_field('top_attractions_description');
-$attraction_image = get_field('attraction_image');
+$attraction_image            = get_field('attraction_image');
 ?>
 
 <div class="content-body">
@@ -12,7 +12,7 @@ $attraction_image = get_field('attraction_image');
         <p class="top-description"><?php echo $top_attractions_description; ?></p>
       </div>  
       <div class="attractions-carousel owl-carousel">
-        <?php $loop = new WP_Query( array( 'post_type' => 'featured_attraction', 'orderby' => 'post_id', 'order' => 'ASC', 'posts_per_page' => '20') ); ?>		
+        <?php $loop = new WP_Query( array( 'post_type' => 'featured_attraction', 'orderby' => 'rand', 'order' => 'ASC', 'posts_per_page' => '20') ); ?>		
         <?php while( $loop->have_posts() ) : $loop->the_post(); 
           $attraction_image = get_field('attraction_image');
         ?>		

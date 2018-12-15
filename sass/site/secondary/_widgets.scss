@@ -1,5 +1,5 @@
 .widget {
-  margin: 0 0 1.5em;
+  margin: 0 0 3.5em;
 
   /* Make sure select elements fit in widgets. */
   select {
@@ -30,6 +30,65 @@ form > input[type='submit'] {
 form.search-form {
   display: flex;
   flex: 1;
+}
+
+.subscribe-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > h3 {
+    margin: 0;
+    font-size: 43px;
+    text-transform: uppercase;
+    color: #0078c8;
+    text-align: center;
+  }
+
+  > p {
+    font-family: $font__title-text;
+    font-weight: 300;
+    margin: 2px 0 9px;
+    width: 263px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #aaa;
+  }
+}
+
+form.wpcf7-form {
+  display: flex;
+
+  > p {
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.wpcf7-form input[type='submit'] {
+  height: 44px;
+  border-radius: 0;
+  border: 2px solid #0078c8;
+  background: #0078c8;
+  color: #fff;
+}
+
+span > input[type='email'] {
+  height: 34px;
+  border-radius: 0;
+  border: 2px solid #0078c8;
+  width: 314px;
+  color: rgba(0, 0, 0, 0.2);
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+p > label {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
 }
 
 h2.widget-title {

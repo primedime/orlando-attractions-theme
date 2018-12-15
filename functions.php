@@ -153,7 +153,7 @@ class Partner_Ad_Widget extends WP_Widget {
 		// outputs the content of the widget
 		echo $args['before_widget'] . $args['before_title'] . $title . $args['after_title']; ?>
 		<section class="sidebar-partner">
-    <?php $loop = new WP_Query( array( 'post_type' => 'partner_ads', 'orderby' => 'rand', 'order' => 'ASC', 'posts_per_page' => '1') ); ?>		
+    <?php $loop = new WP_Query( array( 'post_type' => 'partner_ads', 'orderby' => 'rand', 'posts_per_page' => '1') ); ?>		
           <?php while( $loop->have_posts() ) : $loop->the_post(); 
             $partner_image        = get_field('partner_image');
             $partner_url          = get_field('partner_url');

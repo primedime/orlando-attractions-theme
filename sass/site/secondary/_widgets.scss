@@ -6,6 +6,38 @@
     max-width: 100%;
   }
 }
+
+label > input[type='search'] {
+  border-radius: 0;
+  border: 2px solid #0078c8;
+  width: 314px;
+  padding: 8px;
+}
+
+form > input[type='submit'] {
+  border-radius: 0;
+  color: #fff;
+  border: 2px solid #0078c8;
+  background: #0078c8;
+  flex: 1;
+
+  &:hover {
+    border-color: #0078c8;
+    cursor: pointer;
+  }
+}
+
+form.search-form {
+  display: flex;
+  flex: 1;
+}
+
+h2.widget-title {
+  color: #767676;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .partner-wrapper img {
   display: block;
 }

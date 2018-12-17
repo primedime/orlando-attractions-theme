@@ -1507,6 +1507,7 @@ a > span.fa {
 }
 
 label > input[type='search'] {
+	content: '';
 	border-radius: 0;
 	border: 2px solid #0078c8;
 	width: 314px;
@@ -1594,6 +1595,7 @@ h2.widget-title {
 	color: #767676;
 	text-transform: uppercase;
 	text-align: center;
+	font-size: 18px;
 }
 
 .partner-wrapper img {
@@ -2125,7 +2127,7 @@ h2.fun-title {
 .top-tickets-container {
 	background: #fff;
 	display: grid;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 65% 35%;
 	grid-template-rows: repeat(1, 100%);
 }
 

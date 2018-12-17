@@ -8,6 +8,7 @@
 }
 
 label > input[type='search'] {
+  content: '';
   border-radius: 0;
   border: 2px solid #0078c8;
   width: 314px;
@@ -95,6 +96,7 @@ h2.widget-title {
   color: #767676;
   text-transform: uppercase;
   text-align: center;
+  font-size: 18px;
 }
 
 .partner-wrapper img {

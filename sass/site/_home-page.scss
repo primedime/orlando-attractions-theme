@@ -323,7 +323,7 @@ h2.fun-title {
 .top-tickets-container {
   background: $white;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 65% 35%;
   grid-template-rows: repeat(1, 100%);
 
   @media only screen and (max-width: 414px) {

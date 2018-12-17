@@ -145,11 +145,11 @@
       </div>
     </div> <!-- tickets-container end -->
     <div class="ticket-reviews">
-      <!-- TrustBox widget - Grid -->
-      <div class="trustpilot-widget" data-locale="en-GB" data-template-id="539adbd6dec7e10e686debee" data-businessunit-id="4f5267c40000640005135718" data-style-height="400px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5" data-schema-type="Organization">
-        <a href="https://uk.trustpilot.com/review/www.orlandoattractions.com" target="_blank">Trustpilot</a>
-      </div>
-      <!-- END TrustBox widget -->
+      <!-- TrustBox widget - List -->
+    <div class="trustpilot-widget" data-locale="en-GB" data-template-id="539ad60defb9600b94d7df2c" data-businessunit-id="4f5267c40000640005135718" data-style-height="400px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5" data-schema-type="Organization">
+      <a href="https://uk.trustpilot.com/review/www.orlandoattractions.com" target="_blank">Trustpilot</a>
+    </div>
+<!-- End TrustBox widget -->
     </div> <!-- END ticket-reviews -->
   </div> <!-- END top-tickets-container -->
 </div> <!-- END content-body -->

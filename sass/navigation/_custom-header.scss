@@ -134,7 +134,7 @@ header {
   }
 }
 
-.middle-links ul {
+ul.sub-menu {
   @include middle-nav-gradient;
   visibility: hidden;
   opacity: 0;
@@ -146,13 +146,8 @@ header {
 
   > li {
     max-height: 40px;
-    min-width: 235px;
+    // min-width: 235px;
   }
-
-  // > li ul li {
-  //   max-height: 40px;
-  //   max-width: 235px;
-  // }
 
   > li a {
     color: $white;
@@ -177,7 +172,7 @@ header {
   opacity: 0;
   display: none;
   position: relative;
-  left: 230px;
+  left: 238px;
   top: -40px;
   -webkit-box-shadow: -9px 0 30px -13px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -9px 0 30px -13px rgba(0, 0, 0, 0.75);
@@ -220,6 +215,7 @@ ul li ul li > a:after {
   content: '\00bb';
   font-size: 1.2rem;
   font-weight: 100;
+  margin-left: 20px;
 }
 
 ul li ul li > a:only-child:after {

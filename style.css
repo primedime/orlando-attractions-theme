@@ -888,7 +888,7 @@ header {
 	}
 }
 
-.middle-links ul {
+ul.sub-menu {
 	background: #0874cc;
 	background: -moz-linear-gradient(-45deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
 	background: -webkit-gradient(left top, right bottom, color-stop(0%, #0874cc), color-stop(21%, #0874cc), color-stop(100%, #38a0f0));
@@ -906,12 +906,11 @@ header {
 	padding: 0;
 }
 
-.middle-links ul > li {
+ul.sub-menu > li {
 	max-height: 40px;
-	min-width: 235px;
 }
 
-.middle-links ul > li a {
+ul.sub-menu > li a {
 	color: #fff;
 	font-size: 0.9rem;
 	padding: 10px;
@@ -922,7 +921,7 @@ header {
 	text-transform: none;
 }
 
-.middle-links ul li:hover > a {
+ul.sub-menu li:hover > a {
 	color: #0f88eb;
 	background-color: #fff;
 }
@@ -933,7 +932,7 @@ header {
 	opacity: 0;
 	display: none;
 	position: relative;
-	left: 230px;
+	left: 238px;
 	top: -40px;
 	-webkit-box-shadow: -9px 0 30px -13px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: -9px 0 30px -13px rgba(0, 0, 0, 0.75);
@@ -978,6 +977,7 @@ ul li ul li > a:after {
 	content: '\00bb';
 	font-size: 1.2rem;
 	font-weight: 100;
+	margin-left: 20px;
 }
 
 ul li ul li > a:only-child:after {

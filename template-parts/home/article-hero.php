@@ -11,11 +11,11 @@
       <div class="article-overlay">
         <div class="featured-article-details">
           <div class="category">
-          <i class="fas fa-rss"></i><p class="text">News</p>
+          <i class="fas fa-rss"></i><p class="category-text">News</p>
           </div>
           <h2 class="article-title"><?php echo $post['post_title'] ?></h2>
           <div class="read-more">
-            <p class="text">Read More</p><i class="fas fa-long-arrow-alt-right"></i>
+            <p class="link-text">Read More</p><i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </div>
       </div>
@@ -39,13 +39,13 @@
         </div>
         <div class="article-thumb-details">
           <div class="category">
-            <i class="fas fa-rss"></i><p class="text">News</p>
+            <i class="fas fa-rss"></i><p class="category-text">News</p>
           </div>
           <div class="title">
             <h2><?php echo $post['post_title'] ?></h2>
           </div>
           <div class="read-more">
-            <p class="text">Read More</p><i class="fas fa-long-arrow-alt-right"></i>
+            <p class="link-text">Read More</p><i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </div>
       </a>

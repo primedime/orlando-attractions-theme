@@ -100,7 +100,7 @@
     margin-right: 8px;
   }
 
-  .text {
+  .category-text {
     font-weight: 600;
     padding: 0;
     margin: 0;
@@ -113,10 +113,11 @@
   justify-content: flex-end;
   color: #e04ab2;
 
-  .text {
+  .link-text {
     font-weight: 600;
     margin: 0;
     padding: 0;
+    color: #e04ab2;
   }
 
   i {
@@ -206,6 +207,7 @@ img.thumb-article-image.wp-post-image {
 
   > .read-more {
     flex: 1;
+    display: flex;
   }
 
   @media only screen and (max-width: 414px) {
@@ -216,7 +218,11 @@ img.thumb-article-image.wp-post-image {
       font-size: 12px;
     }
 
-    p.text {
+    p.link-text {
+      font-weight: 600;
+      margin: 0;
+      padding: 0;
+      color: #e04ab2;
       font-size: 12px;
     }
 

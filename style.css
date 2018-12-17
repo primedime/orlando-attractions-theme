@@ -2312,7 +2312,7 @@ p.ticket-button-text {
 	margin-right: 8px;
 }
 
-.category .text {
+.category .category-text {
 	font-weight: 600;
 	padding: 0;
 	margin: 0;
@@ -2325,10 +2325,11 @@ p.ticket-button-text {
 	color: #e04ab2;
 }
 
-.read-more .text {
+.read-more .link-text {
 	font-weight: 600;
 	margin: 0;
 	padding: 0;
+	color: #e04ab2;
 }
 
 .read-more i {
@@ -2428,6 +2429,7 @@ img.thumb-article-image.wp-post-image {
 
 .article-thumb-details > .read-more {
 	flex: 1;
+	display: flex;
 }
 
 @media only screen and (max-width: 414px) {
@@ -2438,7 +2440,11 @@ img.thumb-article-image.wp-post-image {
 		margin-top: 4px;
 		font-size: 12px;
 	}
-	.article-thumb-details p.text {
+	.article-thumb-details p.link-text {
+		font-weight: 600;
+		margin: 0;
+		padding: 0;
+		color: #e04ab2;
 		font-size: 12px;
 	}
 	.article-thumb-details .title {

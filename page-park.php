@@ -28,7 +28,7 @@ get_header();
             ?>
             </div>
         </div><!-- .content-body -->
-        <aside class="park-aside">
+        <aside id="secondary" class="park-aside widget-area">
         <?php
         get_sidebar('parks'); ?>
         </aside>

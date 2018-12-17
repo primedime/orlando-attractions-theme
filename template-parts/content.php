@@ -23,7 +23,7 @@
 			<div class="entry-meta">
 				<?php
 				orlando_attractions_posted_on();
-				orlando_attractions_posted_by();
+				// orlando_attractions_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -53,7 +53,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<!-- <footer class="entry-footer">
 		<?php orlando_attractions_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	</footer> --> <!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

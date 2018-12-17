@@ -259,3 +259,15 @@ function remove_thumbnail_width_height( $html, $post_id, $post_thumbnail_id, $si
     $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
     return $html;
 }
+
+// Remove P Tags Around Images 
+function filter_ptags_on_images($content){
+	return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
+}
+add_filter('the_content', 'filter_ptags_on_images');
+
+// Remove P Tags Around iFrame 
+function filter_ptags_on_iframe($content){
+	return preg_replace('/<p>\s*(<iframe.*>*.<\/iframe>)\s*<\/p>/iU', '\1', $content);
+}
+add_filter('the_content', 'filter_ptags_on_iframe');

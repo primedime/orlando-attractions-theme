@@ -2008,6 +2008,11 @@ h2.fun-title {
 	font-size: 1.125rem;
 }
 
+.action-list li a:hover,
+.distraction-list li a:hover {
+	color: rgba(0, 0, 255, 0.733);
+}
+
 @media only screen and (max-width: 414px) {
 	.action-list li a,
 	.distraction-list li a {
@@ -2027,27 +2032,15 @@ h2.fun-title {
 	padding-left: 28px;
 }
 
-.best-lists li:before {
-	content: '\f0da';
-	/* FontAwesome Unicode */
-	font-family: FontAwesome;
-	display: inline-block;
-	color: #00c7dd;
-	margin-left: -1.3rem;
-	/* same as padding-left set on li */
-	width: 1rem;
-	/* same as padding-left set on li */
-}
-
 .best-lists ul li {
 	font-size: 1.125rem;
-	list-style: none;
 	padding-bottom: 2px;
+	animation: ease-in-out 10s;
 }
 
 .best-lists ul li:hover {
-	padding-left: 4px;
-	animation: ease-in-out 1s;
+	padding-left: 1px;
+	animation: ease-in-out 10s;
 }
 
 .app-features-list li {

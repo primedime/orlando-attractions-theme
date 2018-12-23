@@ -10,7 +10,7 @@
       <div class="tickets-carousel owl-carousel owl-theme">
         <div class="ticket-card">
           <div class="ticket-image">
-            <img src="/wp-content/uploads/2018/07/kennedy-space-centre-270x214.jpg" alt="">
+            <img src="/wp-content/uploads/2018/12/kennedy-space-centre-270x214.jpg" alt="">
           </div>
           <div class="ticket-name">
             <h3>Kennedy Space Center Admission Badge</h3>
@@ -32,7 +32,7 @@
       
         <div class="ticket-card">
           <div class="ticket-image">
-            <img src="/wp-content/uploads/2018/07/icon-orlando-eye-wheel-270x214.jpg" alt="">
+            <img src="/wp-content/uploads/2018/12/icon-orlando-eye-wheel-270x214.jpg" alt="">
           </div>
           <div class="ticket-name">
             <h3>ICON Orlando Eye at ICON 360</h3>
@@ -54,7 +54,7 @@
       
         <div class="ticket-card">
           <div class="ticket-image">
-            <img src="/wp-content/uploads/2018/07/boggy-creek-airboat-ride-tickets-270x214.jpg" alt="">
+            <img src="/wp-content/uploads/2018/12/boggy-creek-airboat-ride-tickets-270x214.jpg" alt="">
           </div>
           <div class="ticket-name">
             <h3>Boggy Creek Orlando 30-Minute Airboat Ride</h3>
@@ -76,7 +76,7 @@
 
         <div class="ticket-card">
           <div class="ticket-image">
-            <img src="/wp-content/uploads/2018/07/medieval-times-sword-fight-270x214.jpg" alt="">
+            <img src="/wp-content/uploads/2018/12/medieval-times-sword-fight-270x214.jpg" alt="">
           </div>
           <div class="ticket-name">
             <h3>Medieval Times Dinner & Show</h3>
@@ -98,7 +98,7 @@
 
         <div class="ticket-card">
           <div class="ticket-image">
-            <img src="/wp-content/uploads/2018/07/clearwater-beach2-270x214.jpg" alt="">
+            <img src="/wp-content/uploads/2018/12/clearwater-beach2-270x214.jpg" alt="">
           </div>
           <div class="ticket-name">
             <h3>Clearwater Beach & Lunch</h3>
@@ -120,7 +120,7 @@
       
         <div class="ticket-card">
           <div class="ticket-image">
-            <img src="/wp-content/uploads/2018/07/wonderworks-orlando-main-270x214.jpg" alt="">
+            <img src="/wp-content/uploads/2018/12/wonderworks-orlando-main-270x214.jpg" alt="">
           </div>
           <div class="ticket-name">
             <h3>WonderWorks All Access Ticket</h3>
@@ -146,7 +146,7 @@
     </div> <!-- tickets-container end -->
     <div class="ticket-reviews">
       <!-- TrustBox widget - List -->
-    <div class="trustpilot-widget" data-locale="en-GB" data-template-id="539ad60defb9600b94d7df2c" data-businessunit-id="4f5267c40000640005135718" data-style-height="400px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5" data-schema-type="Organization">
+    <div class="trustpilot-widget" data-locale="en-GB" data-template-id="539ad60defb9600b94d7df2c" data-businessunit-id="4f5267c40000640005135718" data-style-height="300px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5" data-schema-type="Organization">
       <a href="https://uk.trustpilot.com/review/www.orlandoattractions.com" target="_blank">Trustpilot</a>
     </div>
 <!-- End TrustBox widget -->

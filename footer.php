@@ -218,6 +218,33 @@
     })
   </script>
   <script>
+    var owl = $('.parks-carousel');
+    $(owl).owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsiveClass: true,
+      autoHeight:true,
+      responsive: {
+        0: {
+          items: 2,
+          nav: false,
+          stagePadding: 25
+        },
+        600: {
+          items: 2,
+          nav: false,
+          stagePadding: 25
+        },
+        1000: {
+          items: 4,
+          nav: false,
+          loop: true
+        }
+      }
+    })
+  </script>
+  <script>
     var owl = $('.partner-ticket-carousel');
     $(owl).owlCarousel({
       loop: false,

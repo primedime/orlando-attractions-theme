@@ -3,7 +3,17 @@
 
   > .content-body {
     order: 1;
+    overflow: hidden;
   }
+}
+
+.parks-gallery > h2.title {
+  font-size: 2.25rem;
+  color: #154299;
+}
+
+.parks-gallery .owl-item img {
+  height: 200px;
 }
 
 .park-aside {

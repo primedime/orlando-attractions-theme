@@ -13,25 +13,26 @@ get_header();
 	
 <div id="primary" class="content-area">
 	<main id="main" class="park-main">
-        <div class="content-body">
-            <?php get_template_part( 'template-parts/parks/parks','hero' ); ?>
+    <div class="content-body">
+      <?php get_template_part( 'template-parts/parks/parks','hero' ); ?>
+      <?php get_template_part( 'template-parts/parks/parks','gallery' ); ?>
 
-            <div class="wysiwyg-editor">
-            <?php the_field('partner_content'); ?>
-            <?php
-              the_content();
-
-              wp_link_pages( array(
-                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'orlando-attractions' ),
-                'after'  => '</div>',
-              ) );
-            ?>
-            </div>
-        </div><!-- .content-body -->
-        <aside id="secondary" class="park-aside widget-area">
+      <div class="wysiwyg-editor">
+        <?php the_field('partner_content'); ?>
         <?php
-        get_sidebar('parks'); ?>
-        </aside>
+          the_content();
+
+          wp_link_pages( array(
+            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'orlando-attractions' ),
+            'after'  => '</div>',
+          ) );
+        ?>
+      </div>
+    </div><!-- .content-body -->
+    <aside id="secondary" class="park-aside widget-area">
+      <?php
+      get_sidebar('parks'); ?>
+    </aside>
 	</main><!-- #main -->
 </div><!-- #primary -->
 

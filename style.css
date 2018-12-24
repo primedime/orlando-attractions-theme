@@ -3475,7 +3475,7 @@ h3.list-title {
 --------------------------------------------------------------*/
 .ticket-wrapper {
 	height: 110px;
-	max-width: 300px;
+	max-width: 320px;
 	display: flex;
 	flex-direction: column;
 	border: 1px solid #d5d5d5;
@@ -3495,12 +3495,12 @@ h3.list-title {
 	display: flex;
 	align-items: center;
 	margin-top: auto;
-	padding: 0 10px 5px;
+	padding: 0 10px;
 }
 
 .price-section p {
 	margin: 0;
-	padding: 0;
+	padding: 0 5px 0 0;
 	font-weight: 600;
 }
 
@@ -3514,6 +3514,7 @@ h3.list-title {
 
 .buy-now {
 	margin-left: auto;
+	padding: 15px 0;
 }
 
 .buy-now a {

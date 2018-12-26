@@ -14,7 +14,9 @@ $park_address_url              = get_field('park_address_url');
 
   <div class="park-details">
     <section class="park">
-      <h1 itemprop="name" class="park-title"><?php the_title(); ?></h1>
+      <header>
+        <h1 itemprop="name" class="park-title"><?php the_title(); ?></h1>
+      </header>
       <p itemprop="description" class="park-intro"><?php echo $park_intro_text; ?></p>
     </section> <!-- destination-details END -->
 

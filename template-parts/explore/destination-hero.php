@@ -16,23 +16,25 @@ $instagram                     = get_field('instagram');
 
 <div class="destination-hero">
   <div class="destination-video">
-    <iframe width="640" height="385" src="<?php echo $youtube_video_url; ?>" frameborder="0" allow="autoplay; encrypted-media"
-      allowfullscreen></iframe>
+    <embed width="640" height="385" src="<?php echo $youtube_video_url; ?>" frameborder="0" allow="autoplay; encrypted-media"
+      allowfullscreen>
   </div> <!-- destination-video END -->
 
   <div class="destination-details">
-    <div class="destination">
-      <h1 class="destination-title"><?php the_title(); ?></h1>
+    <section class="destination">
+      <header>
+        <h1 itemprop="name" class="destination-title"><?php the_title(); ?></h1>
+      </header>
       <ul>
-        <li>Visitor Center: <a href="<?php echo $destination_address_url; ?>" class="address" target="_blank"><?php echo $destination_address; ?></a></li>
-        <li>Phone: <a href="tel:<?php echo $destination_phone_url; ?>" class="phone"><?php echo $destination_phone; ?></a></li>
+        <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Visitor Center: <a href="<?php echo $destination_address_url; ?>" class="address" target="_blank"><span itemprop="streetAddress"><?php echo $destination_address; ?></span></a></li>
+        <li>Phone: <a href="tel:<?php echo $destination_phone_url; ?>" class="phone"><span itemprop="telephone"><?php echo $destination_phone; ?></span></a></li>
         <?php if( !empty($destination_email) ) : ?>
         <li>Email: <a href="mailto:<?php echo $destination_email; ?>" class="email"><?php echo $destination_email; ?></a></li>
         <?php endif; ?>
       </ul>
-    </div> <!-- destination-details END -->
+    </section> <!-- destination-details END -->
 
-    <div class="destination-social">
+    <section class="destination-social">
       <ul>
         <?php if( !empty($facebook) ) : ?>
         <li><a itemprop="sameAs" href="<?php echo $facebook; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
@@ -50,24 +52,24 @@ $instagram                     = get_field('instagram');
         <li><a itemprop="sameAs" href="<?php echo $instagram; ?>" target="_blank"><i class="fab fa-instagram"></i></a></li>
         <?php endif; ?>
       </ul>
-    </div> <!-- destination-social END -->
+    </section> <!-- destination-social END -->
 
-    <div class="destination-highlights">
+    <section class="destination-highlights">
       <h3>Destination Highlights</h3>  
-    <?php 
+      <?php 
         $hashtags = get_field('hashtags');
 
       if( $hashtags ): ?>    
         <div class="tags"> 
         <?php foreach( $hashtags as $hashtag ): ?> 
           <div class="tag">            
-            <i class="fas fa-hashtag"></i><?php echo $hashtag; ?>  
+            <i class="fas fa-hashtag"></i><span itemprop="touristType"><?php echo $hashtag; ?></span>  
           </div> 
           <?php endforeach; ?> 
         </div>
         
         <?php endif; ?>
-    </div>
+    </section>
 
   </div> <!-- destination-details END -->
 </div> <!-- destination-hero END -->

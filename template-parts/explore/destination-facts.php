@@ -8,11 +8,11 @@ $fact_3           = get_field('did_you_know_fact_3');
 ?>
 
 <div class="destination-facts">
-  <div class="things-to-do">
+  <section class="things-to-do">
     <h2 class="title">Things to do in <?php the_title(); ?></h2>
-    <p><?php echo $things_to_do; ?></p>
-  </div>
-  <div class="did-you-know">
+    <p itemprop="description"><?php echo $things_to_do; ?></p>
+  </section>
+  <section class="did-you-know">
 
     <h5 class="title">Did You Know?</h5>
     <p class="sub-title">Interesting & useful facts</p>
@@ -44,5 +44,5 @@ $fact_3           = get_field('did_you_know_fact_3');
       </div>
     </div> <!-- fact-wrapper END -->
 
-  </div> <!-- did-you-know END -->
+  </section> <!-- did-you-know END -->
 </div> <!-- destination-facts END -->

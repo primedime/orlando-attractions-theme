@@ -19,21 +19,21 @@ $attraction_phone_url          = $attractions_address_first_row['attraction_phon
 
 <div class="destination-hero">
   <div class="destination-video">
-    <iframe width="640" height="396" src="<?php echo $youtube_video_url; ?>" frameborder="0" allow="autoplay; encrypted-media"
-      allowfullscreen></iframe>
+    <embed width="640" height="396" src="<?php echo $youtube_video_url; ?>" frameborder="0" allow="autoplay; encrypted-media"
+      allowfullscreen>
   </div> <!-- destination-video END -->
 
   <div class="destination-details">
-    <div class="destination">
+    <section class="destination">
       <h1 class="destination-title"><?php the_title(); ?></h1>
       <ul>
-        <li>Location: <a href="<?php echo $attraction_address_url ; ?>" class="address" target="_blank"><?php echo $attraction_address; ?></a></li>
-        <li>Phone: <a href="tel:<?php echo $attraction_phone_url; ?>" class="phone"><?php echo $attraction_phone; ?></a></li>
-        <li>Website: <a href="<?php echo $attraction_website; ?>" class="email" target="_blank"><?php echo $attraction_website; ?></a></li>
+        <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Location: <a href="<?php echo $attraction_address_url ; ?>" class="address" target="_blank"><span itemprop="streetAddress"><?php echo $attraction_address; ?></span></a></li>
+        <li>Phone: <a href="tel:<?php echo $attraction_phone_url; ?>" class="phone"><span itemprop="telephone"><?php echo $attraction_phone; ?></span></a></li>
+        <li>Website: <a href="<?php echo $attraction_website; ?>" itemprop="url" class="email" target="_blank"><?php echo $attraction_website; ?></a></li>
       </ul>
-    </div> <!-- destination-details END -->
+    </section> <!-- destination-details END -->
 
-    <div class="destination-social">
+    <section class="destination-social">
       <ul>
         <?php if( !empty($facebook) ) : ?>
         <li><a itemprop="sameAs" href="<?php echo $facebook; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
@@ -51,8 +51,8 @@ $attraction_phone_url          = $attractions_address_first_row['attraction_phon
         <li><a itemprop="sameAs" href="<?php echo $instagram; ?>" target="_blank"><i class="fab fa-instagram"></i></a></li>
         <?php endif; ?>
       </ul>
-    </div> <!-- destination-social END -->
-    <div class="attraction-tickets">
+    </section> <!-- destination-social END -->
+    <section class="attraction-tickets">
       <?php if( have_rows('tickets') ): ?>
         <h3><?php the_title(); ?> Tickets</h3>
       <?php endif; ?>
@@ -69,21 +69,22 @@ $attraction_phone_url          = $attractions_address_first_row['attraction_phon
 
             ?>
 
-            <div class="ticket-wrapper">
+            <div itemscope itemtype="http://schema.org/Product" class="ticket-wrapper">
               <div class="ticket-title">
-                <h3><?php echo $ticket_title; ?></h3>
+                <h3 itemprop="name"><?php echo $ticket_title; ?></h3>
               </div>
-              <div class="price-section">
+              <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price-section">
+              <meta itemprop="availability" content="http://schema.org/InStock">
                 <div class="prices">
                   <?php if( !empty($ticket_price) ): ?>
-                    <p class="adult">Ticket: <?php echo $ticket_price; ?></p>
+                    <p class="adult">Ticket: <span itemprop="price" content="<?php echo $ticket_price; ?>"><span itemprop="priceCurrency" content="USD">$</span><?php echo $ticket_price; ?></span></p>
                   <?php elseif( !empty($adult_price || $child_price) ): ?>
-                    <p class="adult">Adult: <?php echo $adult_price; ?></p>
-                    <p class="child">Child: <?php echo $child_price; ?></p>
+                    <p class="adult">Adult: <span itemprop="price" content="<?php echo $ticket_price; ?>"><span itemprop="priceCurrency" content="USD">$</span><?php echo $adult_price; ?></span></p>
+                    <p class="child">Child: <span itemprop="price" content="<?php echo $ticket_price; ?>"><span itemprop="priceCurrency" content="USD">$</span><?php echo $child_price; ?></span></p>
                   <?php endif; ?>  
                 </div>
                 <div class="buy-now">
-                  <a href="#">Buy Now</a>
+                  <a href="<?php echo $ticket_url; ?>" itemprop="url">Buy Now</a>
                 </div>
               </div>
             </div>
@@ -91,7 +92,7 @@ $attraction_phone_url          = $attractions_address_first_row['attraction_phon
           <?php endwhile; ?>     
         <?php endif; ?>
       </div>
-    </div>
+    </section>
 
   </div> <!-- destination-details END -->
 </div> <!-- destination-hero END -->

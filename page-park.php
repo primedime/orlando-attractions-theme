@@ -13,7 +13,7 @@ get_header();
 	
 <div id="primary" class="content-area">
 	<main id="main" class="park-main">
-    <div class="content-body">
+    <div itemscope itemtype="http://schema.org/AmusementPark http://schema.org/TouristAttraction" class="content-body">
       <?php get_template_part( 'template-parts/parks/parks','hero' ); ?>
       <?php get_template_part( 'template-parts/parks/parks','gallery' ); ?>
 

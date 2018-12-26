@@ -14,8 +14,8 @@ $park_address_url              = get_field('park_address_url');
 
   <div class="park-details">
     <div class="park">
-      <h1 class="park-title"><?php the_title(); ?></h1>
-      <p class="park-intro"><?php echo $park_intro_text; ?></p>
+      <h1 itemprop="name" class="park-title"><?php the_title(); ?></h1>
+      <p itemprop="description" class="park-intro"><?php echo $park_intro_text; ?></p>
     </div> <!-- destination-details END -->
 
     <div class="attraction-tickets">
@@ -35,21 +35,22 @@ $park_address_url              = get_field('park_address_url');
 
             ?>
 
-            <div class="ticket-wrapper">
+            <div itemscope itemtype="http://schema.org/Product" class="ticket-wrapper">
               <div class="ticket-title">
-                <h3><?php echo $ticket_title; ?></h3>
+                <h3 itemprop="name"><?php echo $ticket_title; ?></h3>
               </div>
-              <div class="price-section">
+              <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price-section">
+              <meta itemprop="availability" content="http://schema.org/InStock">
                 <div class="prices">
                   <?php if( !empty($ticket_price) ): ?>
-                    <p class="adult">Ticket: <?php echo $ticket_price; ?></p>
+                    <p class="adult">Ticket: <span itemprop="price" content="<?php echo $ticket_price; ?>"><span itemprop="priceCurrency" content="USD">$</span><?php echo $ticket_price; ?></span></p>
                   <?php elseif( !empty($adult_price || $child_price) ): ?>
-                    <p class="adult">Adult: <?php echo $adult_price; ?></p>
-                    <p class="child">Child: <?php echo $child_price; ?></p>
+                    <p class="adult">Adult: <span itemprop="price" content="<?php echo $adult_price; ?>"><span itemprop="priceCurrency" content="USD">$</span><?php echo $adult_price; ?></span></p>
+                    <p class="child">Child: <span itemprop="price" content="<?php echo $child_price; ?>"><span itemprop="priceCurrency" content="USD">$</span><?php echo $child_price; ?></span></p>
                   <?php endif; ?>  
                 </div>
                 <div class="buy-now">
-                  <a href="#">Learn More</a>
+                  <a itemprop="url" href="<?php echo $ticket_url; ?>">Learn More</a>
                 </div>
               </div>
             </div>

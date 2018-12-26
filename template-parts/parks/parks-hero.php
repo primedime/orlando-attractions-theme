@@ -8,17 +8,17 @@ $park_address_url              = get_field('park_address_url');
 
 <div class="park-hero">
   <div class="park-video">
-    <iframe width="640" height="396" src="<?php echo $youtube_video_url; ?>" frameborder="0" allow="autoplay; encrypted-media"
-      allowfullscreen></iframe>
+    <embed width="640" height="396" src="<?php echo $youtube_video_url; ?>" frameborder="0" allow="autoplay; encrypted-media"
+      allowfullscreen>
   </div> <!-- destination-video END -->
 
   <div class="park-details">
-    <div class="park">
+    <section class="park">
       <h1 itemprop="name" class="park-title"><?php the_title(); ?></h1>
       <p itemprop="description" class="park-intro"><?php echo $park_intro_text; ?></p>
-    </div> <!-- destination-details END -->
+    </section> <!-- destination-details END -->
 
-    <div class="attraction-tickets">
+    <section class="attraction-tickets">
       <?php if( have_rows('tickets') ): ?>
         <h3><?php the_title(); ?> Tickets</h3>
       <?php endif; ?>
@@ -58,7 +58,7 @@ $park_address_url              = get_field('park_address_url');
           <?php endwhile; ?>     
         <?php endif; ?>
       </div>
-    </div>
+    </section>
 
   </div> <!-- destination-details END -->
 </div> <!-- destination-hero END -->

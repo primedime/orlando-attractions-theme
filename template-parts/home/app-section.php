@@ -13,11 +13,11 @@
               <li>Discount Deals</li>
               <li>Day Trip Destinations</li>
               <li>Attraction Videos</li>
-              <li>Shopping Venues</li>
-              <li>Family Dining</li>
-              <li>Rental Car Safety</li>
+              <li>Vacation Countdown Alerts</li>
+              <li>Push Notifications</li>
+              <li>Orlando Airport Info</li>
               <li>Google Directions</li>
-              <li>Offline Access Anytime</li>
+              <li>Prize Giveaways</li>
               <li>Easy to use Vacation Planner</li>
             </ul>
           </div> <!-- app-features-list end -->

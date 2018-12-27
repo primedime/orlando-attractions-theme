@@ -28,8 +28,8 @@ $destination_category    = get_field('category');
       </section> <!-- recent-news END -->
 
       <div class="social-feed">
-        <embed src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F<?php echo $facebook_feed; ?>%2F&tabs=timeline%2Cevents%2Cmessages&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1645195352258588"
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F<?php echo $facebook_feed; ?>%2F&tabs=timeline%2Cevents%2Cmessages&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1645195352258588"
           width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
-          allow="encrypted-media">
+          allow="encrypted-media"></iframe>
       </div>
     </div> <!-- destination-updates END -->

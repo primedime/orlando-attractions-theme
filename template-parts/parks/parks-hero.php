@@ -52,7 +52,7 @@ $park_address_url              = get_field('park_address_url');
                   <?php endif; ?>  
                 </div>
                 <div class="buy-now">
-                  <a itemprop="url" href="<?php echo $ticket_url; ?>">Learn More</a>
+                  <a itemprop="url" href="<?php echo $ticket_url; ?>">Buy Now</a>
                 </div>
               </div>
             </div>

@@ -56,17 +56,8 @@
 
   h2 {
     font-size: 2.3vw;
-    padding-bottom: 5px;
+    padding: 0 0 0 8px;
     margin: 0;
-  }
-
-  h2:before {
-    content: '|';
-    font-weight: 300;
-    color: #00c7dd;
-    position: absolute;
-    left: 20px;
-    bottom: 45px;
   }
 
   @media only screen and (max-width: 414px) {
@@ -86,6 +77,10 @@
   }
 }
 
+.article-title {
+  border-left: 3px solid #00c7dd;
+}
+
 .featured-article-image {
   width: 100%;
   height: 100%;
@@ -103,7 +98,7 @@
   .category-text {
     font-weight: 600;
     padding: 0;
-    margin: 0;
+    margin: 0 0 10px;
   }
 }
 

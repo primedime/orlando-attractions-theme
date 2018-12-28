@@ -13,7 +13,9 @@
           <div class="category">
           <i class="fas fa-rss"></i><p class="category-text">News</p>
           </div>
-          <h2 class="article-title"><?php echo $post['post_title'] ?></h2>
+          <div class="article-title">
+          <h2><?php echo $post['post_title'] ?></h2>
+          </div>
           <div class="read-more">
             <p class="link-text">Read More</p><i class="fas fa-long-arrow-alt-right"></i>
           </div>

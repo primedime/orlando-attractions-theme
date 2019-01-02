@@ -23,9 +23,11 @@
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php orlando_attractions_post_thumbnail(); ?>
+  </header><!-- .entry-header -->
+  
+  <div class="post-thumbnail">
+  <?php the_post_thumbnail( 'medium_large' ); ?>
+    </div>
 
 	<div class="entry-content">
 		<?php

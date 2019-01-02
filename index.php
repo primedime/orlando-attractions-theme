@@ -16,7 +16,7 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="park-main">
+		<main id="main" class="post-main">
 <div class="content-body">
 		<?php
 		if ( have_posts() ) :
@@ -51,7 +51,7 @@ get_header();
 		endif;
 		?>
 		</div>
-		<aside id="secondary" class="park-aside widget-area">
+		<aside id="secondary" class="post-aside widget-area">
       <?php
       get_sidebar('parks'); ?>
     </aside>

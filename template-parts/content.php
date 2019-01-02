@@ -10,6 +10,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="post-thumbnail">
+  	<?php the_post_thumbnail( 'medium_large' ); ?>
+	</div>
+	
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -20,18 +24,9 @@
 
 		if ( 'post' === get_post_type() ) :
 			?>
-			<div class="entry-meta">
-				<?php
-				orlando_attractions_posted_on();
-				// orlando_attractions_posted_by();
-				?>
-			</div><!-- .entry-meta -->
+			
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<div class="post-thumbnail">
-  <?php the_post_thumbnail( 'medium_large' ); ?>
-    </div>
 
 	<div class="entry-content">
 		<?php

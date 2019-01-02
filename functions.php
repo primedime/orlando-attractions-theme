@@ -275,6 +275,6 @@ add_filter('the_content', 'filter_ptags_on_iframe');
 // Replace the excerpt "more" text by a link
 function new_excerpt_more($more) {
 	global $post;
-	return '... <a class="moretag" href="' . get_permalink($post->ID) . '"> continue reading &raquo;</a>';
+	return '... <br /><a class="moretag" href="' . get_permalink($post->ID) . '"> Read More &raquo;</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');

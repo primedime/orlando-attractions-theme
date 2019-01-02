@@ -322,6 +322,7 @@ h2.fun-title {
   grid-template-rows: repeat(1, 100%);
 
   @media only screen and (max-width: 414px) {
+    display: block;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, 100%);
   }

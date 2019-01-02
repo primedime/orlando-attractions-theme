@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
+	<div id="post-primary" class="content-area">
 		<main id="main" class="post-main">
 			<div class="post-body">
 				<?php

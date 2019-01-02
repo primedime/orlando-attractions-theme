@@ -271,3 +271,10 @@ function filter_ptags_on_iframe($content){
 	return preg_replace('/<p>\s*(<iframe.*>*.<\/iframe>)\s*<\/p>/iU', '\1', $content);
 }
 add_filter('the_content', 'filter_ptags_on_iframe');
+
+// Replace the excerpt "more" text by a link
+function new_excerpt_more($more) {
+	global $post;
+	return '... <a class="moretag" href="' . get_permalink($post->ID) . '"> continue reading &raquo;</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');

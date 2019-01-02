@@ -29,11 +29,13 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php orlando_attractions_post_thumbnail(); ?>
+	<div class="post-thumbnail">
+  <?php the_post_thumbnail( 'medium_large' ); ?>
+    </div>
 
 	<div class="entry-content">
 		<?php
-		the_content( sprintf(
+		the_excerpt( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
 				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'orlando-attractions' ),

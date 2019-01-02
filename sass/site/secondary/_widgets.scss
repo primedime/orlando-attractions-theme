@@ -84,6 +84,14 @@ span > input[type='email'] {
   padding-left: 10px;
   font-size: 15px;
   font-weight: 600;
+
+  @media only screen and (max-width: 320px) {
+    width: 230px;
+  }
+
+  @media only screen and (min-width: 375px) {
+    width: 286px;
+  }
 }
 
 p > label {
@@ -101,6 +109,7 @@ h2.widget-title {
 
 .partner-wrapper img {
   display: block;
+  width: 100%;
 }
 
 .text {

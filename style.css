@@ -1585,6 +1585,18 @@ span > input[type='email'] {
 	font-weight: 600;
 }
 
+@media only screen and (max-width: 320px) {
+	span > input[type='email'] {
+		width: 230px;
+	}
+}
+
+@media only screen and (min-width: 375px) {
+	span > input[type='email'] {
+		width: 286px;
+	}
+}
+
 p > label {
 	font-size: 12px;
 	color: rgba(0, 0, 0, 0.6);
@@ -1600,6 +1612,7 @@ h2.widget-title {
 
 .partner-wrapper img {
 	display: block;
+	width: 100%;
 }
 
 .text {
@@ -1699,13 +1712,15 @@ h2.widget-title {
 }
 
 .post-body {
-	margin: 3.875rem 2.3rem;
+	width: 73%;
+	margin-right: 2.3rem;
 }
 
 @media only screen and (max-width: 414px) {
 	.post-body {
-		margin: 2.3rem 0.625rem;
+		margin: 0;
 		overflow: hidden;
+		width: auto;
 	}
 }
 
@@ -1714,18 +1729,44 @@ h2.widget-title {
 	margin: 0 0 1.5em;
 }
 
+div#primary {
+	display: flex;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 414px) {
+	div#primary {
+		display: block;
+	}
+}
+
 .post-main {
 	display: flex;
+	max-width: 1440px;
 }
 
 .post-main > .content-body {
 	order: 0;
 }
 
+@media only screen and (max-width: 414px) {
+	.post-main {
+		flex-direction: column;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+}
+
 .post-aside {
-	min-width: 394px;
-	margin: 3.875rem 2.3rem 3.875rem 0;
+	width: 25%;
 	order: 1;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 414px) {
+	.post-aside {
+		width: auto;
+	}
 }
 
 h1.entry-title {
@@ -1733,6 +1774,12 @@ h1.entry-title {
 	padding-bottom: 26px;
 	font-size: 46px;
 	color: #0078c8;
+}
+
+@media only screen and (max-width: 414px) {
+	h1.entry-title {
+		font-size: 30px;
+	}
 }
 
 .entry-meta {
@@ -1761,6 +1808,16 @@ h1.entry-title {
 .entry-content h2 {
 	font-size: 22px;
 	color: #154299;
+}
+
+@media only screen and (max-width: 414px) {
+	.entry-content p {
+		font-size: 16px;
+	}
+	.entry-content img {
+		width: 100%;
+		height: auto;
+	}
 }
 
 /*--------------------------------------------------------------

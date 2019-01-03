@@ -886,6 +886,9 @@ nav#site-navigation .navbar-middle {
 	background: linear-gradient(135deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0874cc', endColorstr='#38a0f0', GradientType=1 );
 	width: 230px;
+	-webkit-box-shadow: 0px 13px 43px -18px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 13px 43px -18px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 13px 43px -18px rgba(0, 0, 0, 0.75);
 }
 
 .sub-menu-1 li {
@@ -927,6 +930,9 @@ nav#site-navigation .navbar-middle {
 	background: -ms-linear-gradient(-45deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
 	background: linear-gradient(135deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0874cc', endColorstr='#38a0f0', GradientType=1 );
+	-webkit-box-shadow: 0px 13px 43px -18px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 13px 43px -18px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 13px 43px -18px rgba(0, 0, 0, 0.75);
 }
 
 .navbar-bottom {

@@ -53,8 +53,9 @@
 				'menu'             => 'primary',
 				'theme_location'   => 'primary',
 				'container'        => 'div',
-				'container_class'  => 'middle-nav',
-				'menu_class'       => 'middle-links'
+				'container_class'  => 'navbar-middle',
+				'menu_class'       => 'middle-links',
+				'walker' => new WPDocs_Walker_Nav_Menu()
 			));
 		?>
   </nav>

@@ -798,97 +798,85 @@ header {
 	}
 }
 
-.navbar-middle {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background-color: var(--white);
-	padding: 0 2.3rem;
-	overflow: hidden;
-}
-
-.navbar-middle button#navbar-toggle {
+button#navbar-toggle {
 	display: none;
 	visibility: hidden;
 	opacity: 0;
-	background: #fff;
 }
 
-.navbar-middle img {
-	width: 35vw;
-}
-
-@media only screen and (max-width: 414px) {
-	.navbar-middle {
-		padding: 20px 0.6rem;
-	}
-	.navbar-middle img {
-		width: 90%;
-	}
-	.navbar-middle .menu-toggle {
-		display: block;
-	}
-	.navbar-middle.toggled ul {
-		display: block;
-		padding: 0;
-	}
-	.navbar-middle button#navbar-toggle {
-		display: block;
-		visibility: visible;
-		opacity: 1;
-	}
-}
-
-@media only screen and (max-width: 414px) {
-	.middle-nav {
-		position: absolute;
-		z-index: 7777;
-		background-color: #fff;
-		top: 77.98px;
-		right: 0;
-		width: 100vw;
-		-webkit-box-shadow: 0px 13px 43px -18px rgba(0, 0, 0, 0.75);
-		-moz-box-shadow: 0px 13px 43px -18px rgba(0, 0, 0, 0.75);
-		box-shadow: 0px 13px 43px -18px rgba(0, 0, 0, 0.75);
-	}
-}
-
-.middle-links {
+nav#site-navigation {
 	display: flex;
-	justify-content: space-between;
-	list-style: none;
-	margin: 0;
+	align-items: center;
+	padding: 0 2.3rem;
 }
 
-.middle-links > li a {
-	font-size: 1.125rem;
-	font-weight: 400;
-	line-height: 90px;
-	color: #0874cc;
+nav#site-navigation img {
+	max-width: 100%;
+}
+
+nav#site-navigation .logo {
+	order: 0;
+	flex: 1 1 0;
+	display: flex;
+	align-items: center;
+	min-height: 100%;
+}
+
+nav#site-navigation .logo a {
+	display: block;
+}
+
+nav#site-navigation .navbar-middle {
+	order: 1;
+	flex: 2 1 0;
+}
+
+.navbar-middle .main-menu-item > a {
+	color: #0177c1;
+	background: #fff;
+	height: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	text-decoration: none;
-	text-transform: uppercase;
-	padding: 34px 10px;
+	padding: 20px;
 }
 
-.middle-links li:hover > a {
+.navbar-middle a.main-menu-link:hover {
+	background: #0874cc;
 	color: #fff;
-	background-color: #0874cc;
 }
 
-@media only screen and (max-width: 414px) {
-	.middle-links {
-		display: none;
-	}
-	.middle-links > li a {
-		display: block;
-		line-height: 58px;
-		color: #0874cc;
-		padding: 0 50px 0 10px;
-		font-size: 1rem;
-	}
+.navbar-middle ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
 }
 
-ul.sub-menu {
+.navbar-middle li {
+	text-align: center;
+	position: relative;
+}
+
+.navbar-middle li:hover .sub-menu-1 > li {
+	display: block;
+	flex-direction: column;
+	top: 0;
+	text-align: left;
+	padding: 0;
+}
+
+.sub-menu-1 li {
+	display: none;
+	position: absolute;
+	top: 0px;
+}
+
+.sub-menu-1 {
+	flex-direction: column;
+	position: absolute;
 	background: #0874cc;
 	background: -moz-linear-gradient(-45deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
 	background: -webkit-gradient(left top, right bottom, color-stop(0%, #0874cc), color-stop(21%, #0874cc), color-stop(100%, #38a0f0));
@@ -897,91 +885,48 @@ ul.sub-menu {
 	background: -ms-linear-gradient(-45deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
 	background: linear-gradient(135deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0874cc', endColorstr='#38a0f0', GradientType=1 );
-	visibility: hidden;
-	opacity: 0;
-	display: none;
-	position: absolute;
-	z-index: 5555;
-	list-style: none;
-	padding: 0;
+	width: 230px;
 }
 
-ul.sub-menu > li {
-	max-height: 40px;
-}
-
-ul.sub-menu > li a {
-	color: #fff;
-	font-size: 0.9rem;
-	padding: 10px;
-	line-height: 20px;
-	text-decoration: none;
-	display: flex;
-	justify-content: space-between;
-	text-transform: none;
-}
-
-ul.sub-menu li:hover > a {
-	color: #0f88eb;
-	background-color: #fff;
-}
-
-.middle-links ul ul {
-	background-color: #0874cc;
-	visibility: hidden;
-	opacity: 0;
-	display: none;
+.sub-menu-1 li {
 	position: relative;
-	left: 238px;
-	top: -40px;
-	-webkit-box-shadow: -9px 0 30px -13px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: -9px 0 30px -13px rgba(0, 0, 0, 0.75);
-	box-shadow: -9px 0 30px -13px rgba(0, 0, 0, 0.75);
 }
 
-.middle-links ul ul > li a {
-	color: #fff;
-	font-size: 0.9rem;
-	padding: 10px 15px;
-	line-height: 20px;
+.sub-menu-1 li > a {
+	display: block;
+	padding: 10px 0 10px 10px;
 	text-decoration: none;
-	display: block;
-	text-transform: none;
+	color: #fff;
 }
 
-.middle-links ul ul li:hover > a {
-	color: #0874cc;
+.sub-menu-1 li > a:hover {
 	background-color: #fff;
+	color: #0874cc;
 }
 
-@media only screen and (max-width: 414px) {
-	.middle-links ul ul {
-		left: 0;
-	}
-}
-
-.middle-links li:hover > ul {
-	visibility: visible;
-	opacity: 1;
+.sub-menu-1 li:hover .sub-menu-2 li {
 	display: block;
-	-webkit-animation: slide-bottom 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-	animation: slide-bottom 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	text-align: left;
 }
 
-.middle-links li:hover > ul ul {
-	-webkit-animation: slide-right 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-	animation: slide-right 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.sub-menu-2 li {
+	display: none;
 }
 
-ul li ul li > a:after {
-	content: '\00bb';
-	font-size: 1.2rem;
-	font-weight: 100;
-	margin-left: 20px;
-}
-
-ul li ul li > a:only-child:after {
-	content: '';
+.sub-menu-2 {
+	flex-direction: column;
+	position: absolute;
+	top: 0px;
+	left: 100%;
+	width: fit-content;
+	background: #0874cc;
+	background: -moz-linear-gradient(-45deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, #0874cc), color-stop(21%, #0874cc), color-stop(100%, #38a0f0));
+	background: -webkit-linear-gradient(-45deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
+	background: -o-linear-gradient(-45deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
+	background: -ms-linear-gradient(-45deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
+	background: linear-gradient(135deg, #0874cc 0%, #0874cc 21%, #38a0f0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0874cc', endColorstr='#38a0f0', GradientType=1 );
 }
 
 .navbar-bottom {

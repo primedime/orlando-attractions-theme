@@ -31,7 +31,7 @@
         $next_recent_posts = wp_get_recent_posts(array(
           'numberposts' => 3, // Number of recent posts thumbnails to display
           'offset' => 1,
-          'category__not_in' => array(447, 450, 457, 475), // exclude specific partner categories
+          'category__not_in' => array(435, 447, 450, 457, 475), // exclude specific partner categories
           'post_status' => 'publish' // Show only the published posts
         ));
       foreach($next_recent_posts as $post) : ?>

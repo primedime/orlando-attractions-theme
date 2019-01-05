@@ -4,17 +4,36 @@
 
 .post-main {
   display: flex;
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
 
   > .content-body {
-    order: 1;
-    margin: 3.875rem 2.3rem;
+    order: 0;
+    flex: 5 3 auto;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   @media only screen and (max-width: 414px) {
-    > .content-body {
-      order: 1;
-      margin: 2.3rem 0.625rem;
-    }
+    flex-direction: column;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.post-body {
+  flex: 5 3 auto;
+  margin-right: 2.3rem;
+  order: 0;
+
+  @media only screen and (max-width: 414px) {
+    margin: 0;
+    overflow: hidden;
+    width: auto;
   }
 }
 
@@ -54,30 +73,9 @@
   }
 }
 
-.post-body {
-  // margin: 3.875rem 2.3rem;
-  width: 73%;
-  margin-right: 2.3rem;
-
-  @media only screen and (max-width: 414px) {
-    margin: 0;
-    overflow: hidden;
-    width: auto;
-  }
-}
-
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
-}
-
-div#post-primary {
-  display: flex;
-  justify-content: center;
-
-  @media only screen and (max-width: 414px) {
-    display: block;
-  }
 }
 
 a.moretag {
@@ -92,28 +90,9 @@ a.moretag {
   }
 }
 
-.post-main {
-  display: flex;
-  max-width: 1440px;
-  padding-left: 2.3rem;
-  padding-right: 2.3rem;
-
-  > .content-body {
-    order: 0;
-  }
-
-  @media only screen and (max-width: 414px) {
-    flex-direction: column;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-}
-
 .post-aside {
-  width: 25%;
-  // margin: 3.875rem 2.3rem 3.875rem 0;
+  flex: 2 1 auto;
   order: 1;
-  overflow: hidden;
 
   @media only screen and (max-width: 414px) {
     width: auto;
@@ -170,6 +149,11 @@ h2.entry-title a {
   h2 {
     font-size: 22px;
     color: #154299;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
   }
 
   @media only screen and (max-width: 414px) {

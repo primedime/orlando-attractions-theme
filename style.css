@@ -1651,17 +1651,42 @@ h2.widget-title {
 
 .post-main {
 	display: flex;
+	padding-left: 2.3rem;
+	padding-right: 2.3rem;
 }
 
 .post-main > .content-body {
-	order: 1;
-	margin: 3.875rem 2.3rem;
+	order: 0;
+	flex: 5 3 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+	.post-main {
+		flex-direction: column;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
 }
 
 @media only screen and (max-width: 414px) {
-	.post-main > .content-body {
-		order: 1;
-		margin: 2.3rem 0.625rem;
+	.post-main {
+		flex-direction: column;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+}
+
+.post-body {
+	flex: 5 3 auto;
+	margin-right: 2.3rem;
+	order: 0;
+}
+
+@media only screen and (max-width: 414px) {
+	.post-body {
+		margin: 0;
+		overflow: hidden;
+		width: auto;
 	}
 }
 
@@ -1704,33 +1729,9 @@ h2.widget-title {
 	}
 }
 
-.post-body {
-	width: 73%;
-	margin-right: 2.3rem;
-}
-
-@media only screen and (max-width: 414px) {
-	.post-body {
-		margin: 0;
-		overflow: hidden;
-		width: auto;
-	}
-}
-
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
-}
-
-div#post-primary {
-	display: flex;
-	justify-content: center;
-}
-
-@media only screen and (max-width: 414px) {
-	div#post-primary {
-		display: block;
-	}
 }
 
 a.moretag {
@@ -1747,29 +1748,9 @@ a.moretag {
 	}
 }
 
-.post-main {
-	display: flex;
-	max-width: 1440px;
-	padding-left: 2.3rem;
-	padding-right: 2.3rem;
-}
-
-.post-main > .content-body {
-	order: 0;
-}
-
-@media only screen and (max-width: 414px) {
-	.post-main {
-		flex-direction: column;
-		padding-left: 8px;
-		padding-right: 8px;
-	}
-}
-
 .post-aside {
-	width: 25%;
+	flex: 2 1 auto;
 	order: 1;
-	overflow: hidden;
 }
 
 @media only screen and (max-width: 414px) {
@@ -1833,6 +1814,11 @@ h2.entry-title a {
 .entry-content h2 {
 	font-size: 22px;
 	color: #154299;
+}
+
+.entry-content img {
+	width: 100%;
+	height: auto;
 }
 
 @media only screen and (max-width: 414px) {
@@ -3613,6 +3599,16 @@ h3.list-title {
 .park-main > .content-body {
 	order: 1;
 	overflow: hidden;
+	flex: 5 3 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+	.park-main {
+		flex-direction: column;
+	}
+	.park-main > .content-body {
+		order: 0;
+	}
 }
 
 .parks-gallery > h2.title {
@@ -3625,9 +3621,16 @@ h3.list-title {
 }
 
 .park-aside {
-	min-width: 394px;
+	flex: 2 1 auto;
 	margin: 3.875rem 0 3.875rem 2.3rem;
 	order: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+	.park-aside {
+		order: 1;
+		margin: 3.875rem 2.3rem;
+	}
 }
 
 .park-video {

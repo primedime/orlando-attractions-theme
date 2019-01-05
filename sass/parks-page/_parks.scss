@@ -4,6 +4,15 @@
   > .content-body {
     order: 1;
     overflow: hidden;
+    flex: 5 3 auto;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+
+    > .content-body {
+      order: 0;
+    }
   }
 }
 
@@ -17,9 +26,14 @@
 }
 
 .park-aside {
-  min-width: 394px;
+  flex: 2 1 auto;
   margin: 3.875rem 0 3.875rem 2.3rem;
   order: 0;
+
+  @media only screen and (max-width: 1024px) {
+    order: 1;
+    margin: 3.875rem 2.3rem;
+  }
 }
 
 .park-video {

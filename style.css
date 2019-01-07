@@ -1892,7 +1892,7 @@ h2.entry-title a {
 }
 
 .entry-content img {
-	width: 100%;
+	width: auto;
 	height: auto;
 }
 

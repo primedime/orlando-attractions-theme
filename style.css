@@ -1660,11 +1660,20 @@ h2.widget-title {
 	flex: 5 3 auto;
 }
 
+.post-main > .news-body {
+	order: 0;
+	flex: 5 3 auto;
+	margin: 3.875rem 2.3rem 3.875rem 0;
+}
+
 @media only screen and (max-width: 1024px) {
 	.post-main {
 		flex-direction: column;
 		padding-left: 8px;
 		padding-right: 8px;
+	}
+	.post-main > .news-body {
+		margin: 3.875rem 0;
 	}
 }
 
@@ -1729,6 +1738,71 @@ h2.widget-title {
 	}
 }
 
+.container {
+	margin: auto;
+	width: 100%;
+}
+
+.container * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.news-grid {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.news-cell {
+	width: calc(100% / 3);
+	padding: 3px;
+	position: relative;
+	height: 260px;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 1240px) {
+	.news-cell {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.news-cell {
+		width: 100%;
+	}
+}
+
+.news-cell img {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.responsive-image {
+	max-width: 100%;
+}
+
+.news-title {
+	display: flex;
+	align-items: flex-end;
+	position: absolute;
+	background: linear-gradient(transparent, #1e1e1e);
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 3px;
+	height: 150px;
+}
+
+.news-title h2 {
+	color: #fff;
+	font-size: 20px;
+	padding: 0 6px 6px;
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
@@ -1751,6 +1825,7 @@ a.moretag {
 .post-aside {
 	flex: 2 1 auto;
 	order: 1;
+	margin-top: 3.875rem;
 }
 
 @media only screen and (max-width: 414px) {

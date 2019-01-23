@@ -32,7 +32,6 @@
   <nav class="navbar-top" role="navigation">
     <p class="slogan">Smart Vacation Ideas. Save Time. Save Money.</p>
     <ul class="top-links">
-      <li><a href="#">Login</a></li>
       <li><a href="#">Contact Us</a></li>
       <li><a href="#">Ticket FAQ</a></li>
     </ul>

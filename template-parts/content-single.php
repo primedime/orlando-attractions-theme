@@ -25,9 +25,9 @@
 		<?php endif; ?>
   </header><!-- .entry-header -->
   
-  <div class="post-thumbnail">
+  <!-- <div class="post-thumbnail">
   <?php the_post_thumbnail( 'medium_large' ); ?>
-    </div>
+    </div> -->
 
 	<div class="entry-content">
 		<?php

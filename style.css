@@ -804,6 +804,14 @@ button#navbar-toggle {
 	opacity: 0;
 }
 
+@media only screen and (max-width: 1024px) {
+	button#navbar-toggle {
+		display: block;
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
 nav#site-navigation {
 	display: flex;
 	align-items: center;
@@ -829,6 +837,12 @@ nav#site-navigation .logo a {
 nav#site-navigation .navbar-middle {
 	order: 1;
 	flex: 2 1 0;
+}
+
+@media only screen and (max-width: 1024px) {
+	.navbar-middle {
+		display: none;
+	}
 }
 
 .navbar-middle .main-menu-item > a {

@@ -47,6 +47,12 @@ button#navbar-toggle {
   display: none;
   visibility: hidden;
   opacity: 0;
+
+  @media only screen and (max-width: 1024px) {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 nav#site-navigation {
@@ -73,6 +79,12 @@ nav#site-navigation {
   .navbar-middle {
     order: 1;
     flex: 2 1 0;
+  }
+}
+
+.navbar-middle {
+  @media only screen and (max-width: 1024px) {
+    display: none;
   }
 }
 

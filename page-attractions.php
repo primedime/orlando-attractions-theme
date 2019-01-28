@@ -20,7 +20,7 @@ get_header();
 
             <?php get_template_part( 'template-parts/explore/destination','gallery' ); ?>
 
-            <?php get_template_part( 'template-parts/explore/destination','facts' ); ?>
+            <?php get_template_part( 'template-parts/attractions/attractions','facts' ); ?>
             <div class="wysiwyg-editor">
             <?php the_field('partner_content'); ?>
             </div>

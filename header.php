@@ -32,8 +32,8 @@
   <nav class="navbar-top" role="navigation">
     <p class="slogan">Smart Vacation Ideas. Save Time. Save Money.</p>
     <ul class="top-links">
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#">Ticket FAQ</a></li>
+      <li><a href="/tickets/contact">Contact Us</a></li>
+      <li><a href="/orlandoattractiontickets/">Ticket FAQ</a></li>
     </ul>
   </nav>
 

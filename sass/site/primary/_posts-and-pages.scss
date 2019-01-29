@@ -244,3 +244,22 @@ h2.entry-title a {
     }
   }
 }
+
+.basic-main {
+  display: flex;
+}
+
+.basic-main > .content-body {
+  order: 1;
+  overflow: hidden;
+  // flex: 5 3 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .basic-main {
+    flex-direction: column;
+  }
+  .basic-main > .content-body {
+    order: 0;
+  }
+}

@@ -2043,9 +2043,10 @@ h2.top-title-pink {
 	display: flex;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 1290px) {
 	.fun-things {
 		flex-direction: column;
+		align-items: center;
 	}
 }
 
@@ -2063,6 +2064,7 @@ h2.top-title-pink {
 .whats-new {
 	flex: 1 1 0;
 	padding: 1rem;
+	display: flex;
 	justify-content: center;
 	text-align: center;
 	color: #fff;
@@ -2085,6 +2087,12 @@ h2.top-title-pink {
 	align-items: center;
 }
 
+@media only screen and (max-width: 1290px) {
+	.whats-new > .video-box {
+		width: 100%;
+	}
+}
+
 @media only screen and (max-width: 414px) {
 	.whats-new > .video-box {
 		width: 100%;
@@ -2096,6 +2104,12 @@ h2.top-title-pink {
 	border-radius: 8px;
 	margin-bottom: 12px;
 	overflow: hidden;
+}
+
+@media only screen and (max-width: 1290px) {
+	.video-box .whats-new-video {
+		padding: 0 10px;
+	}
 }
 
 @media only screen and (max-width: 414px) {
@@ -2164,7 +2178,7 @@ h2.fun-title {
 	justify-content: space-around;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 750px) {
 	.best-lists {
 		flex-direction: column;
 	}
@@ -2233,7 +2247,7 @@ h2.fun-title {
 	height: 427px;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 770px) {
 	.app-container {
 		display: none;
 	}
@@ -2247,11 +2261,23 @@ h2.fun-title {
 	background-image: linear-gradient(244deg, #00c7e9 0%, #0095cf 100%);
 }
 
+@media only screen and (max-width: 1170px) {
+	.app-details-container {
+		justify-content: center;
+	}
+}
+
 .mock-up-container {
 	display: flex;
 	flex: 0.85;
 	justify-content: flex-end;
 	align-items: flex-end;
+}
+
+@media only screen and (max-width: 1170px) {
+	.mock-up-container {
+		flex: unset;
+	}
 }
 
 .mock-up-container img {
@@ -2263,9 +2289,22 @@ h2.fun-title {
 	padding-left: 1.5rem;
 }
 
+@media only screen and (max-width: 1170px) {
+	.app-text {
+		flex: unset;
+	}
+}
+
 .app-text h2 {
 	color: #fff;
 	font-size: 1.75rem;
+}
+
+@media only screen and (max-width: 900px) {
+	.app-text h2 {
+		font-size: 1.35rem;
+		text-align: center;
+	}
 }
 
 .app-features-list ul {
@@ -2278,6 +2317,12 @@ h2.fun-title {
 .app-features-list li {
 	list-style-type: none;
 	line-height: 1.813rem;
+}
+
+@media only screen and (max-width: 900px) {
+	.app-features-list li {
+		font-size: 0.975rem;
+	}
 }
 
 .app-text .download-links {
@@ -2300,7 +2345,7 @@ h2.fun-title {
 	grid-template-rows: repeat(1, 100%);
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 750px) {
 	.top-tickets-container {
 		display: block;
 		grid-template-columns: 100%;

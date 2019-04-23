@@ -84,8 +84,9 @@ h2.top-title-pink {
 .fun-things {
   display: flex;
 
-  @media only screen and (max-width: 414px) {
+  @media only screen and (max-width: 1290px) {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -103,6 +104,7 @@ h2.top-title-pink {
 .whats-new {
   flex: 1 1 0;
   padding: 1rem;
+  display: flex;
   justify-content: center;
   text-align: center;
   color: $white;
@@ -122,6 +124,10 @@ h2.top-title-pink {
   justify-content: center;
   align-items: center;
 
+  @media only screen and (max-width: 1290px) {
+    width: 100%;
+  }
+
   @media only screen and (max-width: 414px) {
     width: 100%;
   }
@@ -132,6 +138,10 @@ h2.top-title-pink {
   border-radius: 8px;
   margin-bottom: 12px;
   overflow: hidden;
+
+  @media only screen and (max-width: 1290px) {
+    padding: 0 10px;
+  }
 
   @media only screen and (max-width: 414px) {
     margin: 0 8px 12px;
@@ -193,7 +203,7 @@ h2.fun-title {
   display: flex;
   justify-content: space-around;
 
-  @media only screen and (max-width: 414px) {
+  @media only screen and (max-width: 750px) {
     flex-direction: column;
   }
 }
@@ -256,7 +266,7 @@ h2.fun-title {
   background: $white;
   height: 427px;
 
-  @media only screen and (max-width: 414px) {
+  @media only screen and (max-width: 770px) {
     display: none;
   }
 }
@@ -267,6 +277,10 @@ h2.fun-title {
   max-height: 370px;
   min-height: 370px;
   background-image: linear-gradient(244deg, #00c7e9 0%, #0095cf 100%);
+
+  @media only screen and (max-width: 1170px) {
+    justify-content: center;
+  }
 }
 
 .mock-up-container {
@@ -274,6 +288,10 @@ h2.fun-title {
   flex: 0.85;
   justify-content: flex-end;
   align-items: flex-end;
+
+  @media only screen and (max-width: 1170px) {
+    flex: unset;
+  }
 }
 
 .mock-up-container img {
@@ -283,11 +301,20 @@ h2.fun-title {
 .app-text {
   flex: 1;
   padding-left: 1.5rem;
+
+  @media only screen and (max-width: 1170px) {
+    flex: unset;
+  }
 }
 
 .app-text h2 {
   color: $white;
   font-size: $h2-sm;
+
+  @media only screen and (max-width: 900px) {
+    font-size: 1.35rem;
+    text-align: center;
+  }
 }
 
 .app-features-list ul {
@@ -300,6 +327,10 @@ h2.fun-title {
 .app-features-list li {
   list-style-type: none;
   line-height: 1.813rem;
+
+  @media only screen and (max-width: 900px) {
+    font-size: 0.975rem;
+  }
 }
 
 .app-text .download-links {
@@ -321,7 +352,7 @@ h2.fun-title {
   grid-template-columns: 65% 35%;
   grid-template-rows: repeat(1, 100%);
 
-  @media only screen and (max-width: 414px) {
+  @media only screen and (max-width: 750px) {
     display: block;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, 100%);
